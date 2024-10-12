@@ -11,97 +11,67 @@ public class OpenPanel : MonoBehaviour
     public GameObject Panel4;
     public GameObject Panel5;
 
+    // Keep track of the currently active panel
+    private GameObject currentActivePanel = null;
+
     // Duration of the scaling animation
     public float animationDuration = 0.3f;
 
     // Method to toggle Panel1's visibility with animation
     public void OpenPanel1()
     {
-        if (Panel1 != null)
-        {
-            Debug.Log("Panel1 Active: " + Panel1.activeSelf);
-
-            if (Panel1.activeSelf)
-            {
-                Debug.Log("Deactivating Panel1");
-                StartCoroutine(ScalePanel(Panel1, Vector3.one, Vector3.zero, animationDuration, false)); // Scale down
-            }
-            else
-            {
-                Debug.Log("Activating Panel1");
-                Panel1.SetActive(true);
-                StartCoroutine(ScalePanel(Panel1, Vector3.zero, Vector3.one, animationDuration, true)); // Scale up
-            }
-        }
+        TogglePanel(Panel1);
     }
 
     // Method to toggle Panel2's visibility with animation
     public void OpenPanel2()
     {
-        if (Panel2 != null)
-        {
-            Debug.Log("Panel2 Active: " + Panel2.activeSelf);
-
-            if (Panel2.activeSelf)
-            {
-                Debug.Log("Deactivating Panel2");
-                StartCoroutine(ScalePanel(Panel2, Vector3.one, Vector3.zero, animationDuration, false)); // Scale down
-            }
-            else
-            {
-                Debug.Log("Activating Panel2");
-                Panel2.SetActive(true);
-                StartCoroutine(ScalePanel(Panel2, Vector3.zero, Vector3.one, animationDuration, true)); // Scale up
-            }
-        }
+        TogglePanel(Panel2);
     }
 
-    // Same approach for Panel3, Panel4, Panel5
+    // Method to toggle Panel3's visibility with animation
     public void OpenPanel3()
     {
-        if (Panel3 != null)
-        {
-            if (Panel3.activeSelf)
-            {
-                StartCoroutine(ScalePanel(Panel3, Vector3.one, Vector3.zero, animationDuration, false));
-            }
-            else
-            {
-                Panel3.SetActive(true);
-                StartCoroutine(ScalePanel(Panel3, Vector3.zero, Vector3.one, animationDuration, true));
-            }
-        }
+        TogglePanel(Panel3);
     }
 
+    // Method to toggle Panel4's visibility with animation
     public void OpenPanel4()
     {
-        if (Panel4 != null)
-        {
-            if (Panel4.activeSelf)
-            {
-                StartCoroutine(ScalePanel(Panel4, Vector3.one, Vector3.zero, animationDuration, false));
-            }
-            else
-            {
-                Panel4.SetActive(true);
-                StartCoroutine(ScalePanel(Panel4, Vector3.zero, Vector3.one, animationDuration, true));
-            }
-        }
+        TogglePanel(Panel4);
     }
 
+    // Method to toggle Panel5's visibility with animation
     public void OpenPanel5()
     {
-        if (Panel5 != null)
+        TogglePanel(Panel5);
+    }
+
+    // General method to toggle a panel with animation
+    private void TogglePanel(GameObject panel)
+    {
+        if (panel == null)
+            return;
+
+        // If another panel is active, close it first
+        if (currentActivePanel != null && currentActivePanel != panel)
         {
-            if (Panel5.activeSelf)
-            {
-                StartCoroutine(ScalePanel(Panel5, Vector3.one, Vector3.zero, animationDuration, false));
-            }
-            else
-            {
-                Panel5.SetActive(true);
-                StartCoroutine(ScalePanel(Panel5, Vector3.zero, Vector3.one, animationDuration, true));
-            }
+            StartCoroutine(ScalePanel(currentActivePanel, Vector3.one, Vector3.zero, animationDuration, false));
+            currentActivePanel = null;
+        }
+
+        // Check if the panel is already active
+        if (panel.activeSelf)
+        {
+            // Deactivate the panel
+            StartCoroutine(ScalePanel(panel, Vector3.one, Vector3.zero, animationDuration, false));
+        }
+        else
+        {
+            // Activate the new panel
+            panel.SetActive(true);
+            StartCoroutine(ScalePanel(panel, Vector3.zero, Vector3.one, animationDuration, true));
+            currentActivePanel = panel;
         }
     }
 
