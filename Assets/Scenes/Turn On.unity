@@ -173,12 +173,12 @@ GameObject:
   - component: {fileID: 236436749}
   - component: {fileID: 236436748}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Blink
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &236436747
 RectTransform:
   m_ObjectHideFlags: 0

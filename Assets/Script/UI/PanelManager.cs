@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class OpenPanel : MonoBehaviour
@@ -11,11 +13,19 @@ public class OpenPanel : MonoBehaviour
     public GameObject Panel4;
     public GameObject Panel5;
 
+    public Animator anim;
+    private bool isMenuOpen = false;
+
     // Keep track of the currently active panel
     private GameObject currentActivePanel = null;
 
     // Duration of the scaling animation
     public float animationDuration = 0.3f;
+
+    void Start()
+    {
+        anim = GetComponentInChildren<Animator>();
+    }
 
     // Method to toggle Panel1's visibility with animation
     public void OpenPanel1()
@@ -26,7 +36,9 @@ public class OpenPanel : MonoBehaviour
     // Method to toggle Panel2's visibility with animation
     public void OpenPanel2()
     {
-        TogglePanel(Panel2);
+        //TogglePanel(Panel2);
+        isMenuOpen = !isMenuOpen;
+        anim.SetBool("Nyala", isMenuOpen);
     }
 
     // Method to toggle Panel3's visibility with animation

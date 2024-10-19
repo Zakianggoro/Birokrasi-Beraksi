@@ -3,12 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ActiveSprite
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - ActiveSprite
   - Water
   - UI
   - 

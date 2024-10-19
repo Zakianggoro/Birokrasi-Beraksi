@@ -6,16 +6,16 @@ using UnityEngine.SceneManagement;
 public class ChangeSceneIndex : MonoBehaviour
 {
     // Use [SerializeField] to expose private variables in the Inspector
-    [SerializeField] private int indexPlay;
+    [SerializeField] private int Button1Index;
     [SerializeField] private int indexStory;
 
     // Public method to change the scene, can be called from a UI button
-    public void Play()
+    public void Button1()
     {
-        SceneManager.LoadScene(indexPlay);
+        SceneManager.LoadScene(Button1Index);
     }
 
-    public void Story()
+    public void Button2()
     {
         SceneManager.LoadScene(indexStory);
     }
