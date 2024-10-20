@@ -9,6 +9,7 @@ public class DragSprite : MonoBehaviour
     private Vector3 screenPoint;      // Stores screen point of the object
     private Rigidbody2D rb;           // Reference to Rigidbody2D for physics interactions
 
+    public int typeNo = -1;
     public float dragSpeed = 10f;     // Controls how fast the object moves when dragged
 
     private void Start()

@@ -10,6 +10,7 @@ public class ScoreManager : MonoBehaviour
 
     // Public or serialized TMP_Text field to reference the UI TextMeshPro component
     [SerializeField] private TMP_Text scoreText;
+    [SerializeField] private LevelManager levelManager;
 
     private int score = 0;  // Score counter
 
@@ -27,10 +28,15 @@ public class ScoreManager : MonoBehaviour
     }
 
     // Method to add points to the score
-    public void AddScore(int points)
+    public void AddScore()
     {
-        score += points;
+        score++;
         UpdateScoreText();  // Update the UI text
+    }
+
+    public void FinalScore()
+    {
+        levelManager.AccumulatedPoints(score);
     }
 
     // Method to update the score text UI
