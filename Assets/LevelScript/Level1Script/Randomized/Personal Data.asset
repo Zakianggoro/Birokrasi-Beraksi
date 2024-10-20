@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9b7f06455d1ab545af2ccf100338f20, type: 3}
+  m_Name: Personal Data
+  m_EditorClassIdentifier: 
+  personalEntries:
+  - bioName: Ripia
+    bioNIK: 138357587
+    bioTanggalLahir: 16/05/1994
+    bioAlamat: Mokey Mokey
+    bioRequest: Perpindahan
+  - bioName: Diana
+    bioNIK: 116140653
+    bioTanggalLahir: 01/10/1990
+    bioAlamat: Gang 4
+    bioRequest: Keuangan
+  - bioName: Zackary
+    bioNIK: 316798012
+    bioTanggalLahir: 15/12/1998
+    bioAlamat: Lembah Pulau
+    bioRequest: Kerja
+  - bioName: Anton
+    bioNIK: 873769194
+    bioTanggalLahir: 07/07/1997
+    bioAlamat: asdwka
+    bioRequest: Pelaporan
+  - bioName: Zandy
+    bioNIK: 181964518
+    bioTanggalLahir: 23/05/1984
+    bioAlamat: Rumah
+    bioRequest: Keamanan
