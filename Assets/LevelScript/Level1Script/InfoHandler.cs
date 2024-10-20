@@ -21,6 +21,8 @@ public class InfoHandler : MonoBehaviour
     private string[] playerInput = new string[5]; // Store the player's input (one for each field)
     private List<GameObject> duplicates = new List<GameObject>();
 
+    public LevelManager levelManager;
+
     private void Start()
     {
         originalPositions = new Vector3[draggableItems.Length];
@@ -168,7 +170,11 @@ public class InfoHandler : MonoBehaviour
             if (playerInput[4] == correctData.bioRequest) matches++;
 
             Debug.Log($"Player filled {matches} fields correctly out of 5.");
-            correctDocuments += matches;
+
+            if (matches == 5)
+            {
+                correctDocuments++;
+            }
 
             // Optionally, update UI to reflect the score
             UpdateScoreUI();
@@ -203,7 +209,8 @@ public class InfoHandler : MonoBehaviour
         else
         {
             Debug.Log($"All paperwork completed! {correctDocuments} correct fields in total.");
-            FindObjectOfType<LevelManager>().NextLevel(correctDocuments);
+            FinalScore(correctDocuments);
+            FindObjectOfType<LevelManager>().NextLevel("True-False");
         }
     }
 
@@ -258,5 +265,10 @@ public class InfoHandler : MonoBehaviour
                 Debug.LogWarning("No more data sets to assign.");
                 break;
         }
+    }
+
+    private void FinalScore(int point)
+    {
+        levelManager.AccumulatedPoints(point);
     }
 }
