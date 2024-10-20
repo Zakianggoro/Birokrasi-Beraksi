@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a344cca322b4ba3428ee20bfea77c1b9, type: 3}
+  m_Name: RandomizedData
+  m_EditorClassIdentifier: 
+  names:
+  - Diana
+  - Ripia
+  - Anton
+  - Zandy
+  - Zackary
+  nik:
+  - 181964518
+  - 316798012
+  - 873769194
+  - 138357587
+  - 116140653
+  tanggalLahir:
+  - 15/12/1998
+  - 23/05/1984
+  - 16/05/1994
+  - 01/10/1990
+  - 07/07/1997
+  alamat:
+  - Gang 4
+  - Lembah Pulau
+  - Mokey Mokey
+  - asdwka
+  - Rumah
+  request:
+  - Keuangan
+  - Keamanan
+  - Kerja
+  - Pelaporan
+  - Perpindahan
