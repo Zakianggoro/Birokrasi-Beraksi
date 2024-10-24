@@ -9,7 +9,7 @@ public class Password : MonoBehaviour
     public TMP_InputField passwordInputField;
 
     // The correct password (editable in Inspector)
-    [SerializeField] private string correctPassword = "yourpassword";
+    [SerializeField] private string correctPassword = "Masukkan Kata Sandi";
 
     // The index of the scene to load if the password is correct
     [SerializeField] private int sceneIndexToLoad = 1; // Use scene build index
@@ -32,7 +32,7 @@ public class Password : MonoBehaviour
             // If the password is incorrect, display feedback
             if (feedbackText != null)
             {
-                feedbackText.text = "Incorrect Password. Try again.";
+                feedbackText.text = "Password salah, ulangi lagi";
             }
         }
     }

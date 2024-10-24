@@ -1,13 +1,13 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using TMPro; // Import TextMeshPro namespace
 using UnityEngine.UI;
-public class TextPanel : MonoBehaviour
+
+public class PanelText : MonoBehaviour
 {
     public List<string> textList;  // List of texts to be displayed
     public TextMeshProUGUI tmpText;  // Reference to the TextMeshPro component
-    public GameObject panelToDeactivate;  // The panel to deactivate when text list is finished
-    public Button clickableButton;  // Button that triggers the text change
     private int currentTextIndex = 0;  // Index of the current text being displayed
 
     void Start()
@@ -15,18 +15,6 @@ public class TextPanel : MonoBehaviour
         if (tmpText == null)
         {
             Debug.LogError("TextMeshPro component is not assigned!");
-            return;
-        }
-
-        if (panelToDeactivate == null)
-        {
-            Debug.LogError("Panel to deactivate is not assigned!");
-            return;
-        }
-
-        if (clickableButton == null)
-        {
-            Debug.LogError("Button component is not assigned!");
             return;
         }
 
@@ -39,8 +27,16 @@ public class TextPanel : MonoBehaviour
             Debug.LogError("No text in the text list!");
         }
 
-        // Add a listener to the button to handle click events
-        clickableButton.onClick.AddListener(OnButtonClick);
+        // Add a listener to the panel's button or UI component
+        Button panelButton = GetComponent<Button>();
+        if (panelButton != null)
+        {
+            panelButton.onClick.AddListener(OnPanelClick);
+        }
+        else
+        {
+            Debug.LogError("Button component is missing!");
+        }
     }
 
     // Function to display the current text in the TMP component
@@ -49,8 +45,8 @@ public class TextPanel : MonoBehaviour
         tmpText.text = textList[currentTextIndex];
     }
 
-    // Called when the button is clicked
-    void OnButtonClick()
+    // Called when the panel is clicked
+    void OnPanelClick()
     {
         if (currentTextIndex < textList.Count - 1)
         {
@@ -60,7 +56,7 @@ public class TextPanel : MonoBehaviour
         else
         {
             // If it's the last text, deactivate the panel
-            panelToDeactivate.SetActive(false);
+            gameObject.SetActive(false);
         }
     }
 }

@@ -6,23 +6,23 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Turn On.unity
+    path: Assets/Scenes/DAY1/Turn On.unity
     guid: 1535035be473a2f4c815cd1505853edc
   - enabled: 1
-    path: Assets/Scenes/Main Menu.unity
+    path: Assets/Scenes/Main-End/Main Menu.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 0
-    path: Assets/Scenes/Prologue.unity
+    path: Assets/Scenes/Main-End/Prologue.unity
     guid: 2d1e673a100a73045b0dc7e1037560ac
   - enabled: 1
-    path: Assets/Scenes/Windows1.unity
+    path: Assets/Scenes/DAY1/Windows1.unity
     guid: 32282ab107c748049825b2a49d9c46de
+  - enabled: 1
+    path: Assets/Scenes/TestingDoang.unity
+    guid: 6befd15ecd7d232498bd18b6a49c5df8
   - enabled: 1
     path: Assets/Scenes/BuatSurat1.unity
     guid: 6bd473bba0c22314fbd746532adabdc3
-  - enabled: 1
-    path: Assets/Scenes/Interrupt1.unity
-    guid: 4454e8e23d806c849bbe4a0a166c03c2
   - enabled: 1
     path: Assets/Scenes/True-False.unity
     guid: dd60d921605c8664dbe557c327ed9738
