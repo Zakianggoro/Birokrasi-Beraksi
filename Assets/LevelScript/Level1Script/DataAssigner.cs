@@ -58,11 +58,11 @@ public class DataAssigner : MonoBehaviour
             nikText.text = entry.bioNIK;
             tanggalLahirText.text = entry.bioTanggalLahir;
             alamatText.text = entry.bioAlamat;
-            requestText.text = entry.bioRequest;
+            requestText.text = entry.bioPurpose;
 
             // Log the successful data assignment for debugging
             Debug.Log("Displaying Personal Data for index: " + index);
-            Debug.Log($"Name: {entry.bioName}, NIK: {entry.bioNIK}, Date of Birth: {entry.bioTanggalLahir}, Address: {entry.bioAlamat}, Request: {entry.bioRequest}");
+            Debug.Log($"Name: {entry.bioName}, NIK: {entry.bioNIK}, Date of Birth: {entry.bioTanggalLahir}, Address: {entry.bioAlamat}, Request: {entry.bioPurpose}");
         }
         else
         {

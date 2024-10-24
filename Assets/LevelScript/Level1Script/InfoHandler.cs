@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,14 +12,15 @@ public class InfoHandler : MonoBehaviour
     [SerializeField] private TextMeshPro[] draggableTexts; // The text elements inside each draggable item
     [SerializeField] private Button confirmButton;
     [SerializeField] private DataAssigner dataAssigner; // Reference to assign data to the form UI
+    [SerializeField] private DocumentType documentType;
 
-    [SerializeField] private DropArea[] dropBoxes; // Array of DropBoxes (DropAreas)
+   [SerializeField] private DropArea[] dropBoxes; // Array of DropBoxes (DropAreas)
 
     private Vector3[] originalPositions; // To store original positions of draggable items
     private int currentPersonIndex = 0;  // Current person index in the PersonalData list
     private int currentDataSetIndex = 0; // To track which part of data we're on (name, NIK, etc.)
     private int correctDocuments = 0; // Track how many documents are correct
-    private string[] playerInput = new string[5]; // Store the player's input (one for each field)
+    private string[] playerInput = new string[16]; // Store the player's input (one for each field)
     private List<GameObject> duplicates = new List<GameObject>();
 
     public LevelManager levelManager;
@@ -72,7 +74,19 @@ public class InfoHandler : MonoBehaviour
             }
         }
 
-        currentDataSetIndex++;
+        Debug.Log($"Current document type before check: {documentType.document}");
+
+        if (documentType.document == "")
+        {
+            Debug.Log("Document is Null");
+            return;
+        }
+        else
+        {
+            currentDataSetIndex++;
+            Debug.Log("Data Index +1");
+        }
+
 
         // Reset draggable items for the next data set
         ResetDraggableItemsPosition();
@@ -80,21 +94,61 @@ public class InfoHandler : MonoBehaviour
         // Ensure drop areas are cleared before assigning the next data set
         ResetAllDropAreas();
 
-        // After the player completes all fields, check if the data is correct
-        if (currentDataSetIndex >= 5) // Assuming 5 fields
+        switch (documentType.document)
         {
-            CheckDataCorrectness();
-            currentDataSetIndex = 0;
-            NextPerson(); // Move to the next person
-        }
-        else
-        {
-            // Assign next dataset (nik, tanggalLahir, alamat, request)
-            AssignNextDataSet();
+            case "Kehilangan":
+                // After the player completes all fields, check if the data is correct
+                if (currentDataSetIndex >= 14) // Assuming 5 fields
+                {
+                    CheckDataCorrectness();
+                    currentDataSetIndex = 0;
+                    NextPerson(); // Move to the next person
+                }
+                else
+                {
+                    // Assign next dataset (nik, tanggalLahir, alamat, request)
+                    AssignNextDataSet();
+                }
+                break;
+
+            case "Domisili":
+                // Check the relevant fields for "Domisili"
+                // After the player completes all fields, check if the data is correct
+                if (currentDataSetIndex >= 10) // Assuming 5 fields
+                {
+                    CheckDataCorrectness();
+                    currentDataSetIndex = 0;
+                    NextPerson(); // Move to the next person
+                }
+                else
+                {
+                    // Assign next dataset (nik, tanggalLahir, alamat, request)
+                    AssignNextDataSet();
+                }
+                Debug.Log("Domisili");
+                break;
+
+            case "Usaha":
+                // Check the relevant fields for "Usaha"
+                // After the player completes all fields, check if the data is correct
+                if (currentDataSetIndex >= 12) // Assuming 5 fields
+                {
+                    CheckDataCorrectness();
+                    currentDataSetIndex = 0;
+                    NextPerson(); // Move to the next person
+                }
+                else
+                {
+                    // Assign next dataset (nik, tanggalLahir, alamat, request)
+                    AssignNextDataSet();
+                }
+                break;
+
+            default:
+                Debug.LogWarning("No valid document type selected.");
+                break;
         }
     }
-
-
 
     private string GetItemText(GameObject draggedItem)
     {
@@ -131,8 +185,6 @@ public class InfoHandler : MonoBehaviour
         duplicates.Clear();
     }
 
-
-
     private void AssignDataToDraggableItems(string[] dataSet)
     {
         for (int i = 0; i < draggableItems.Length; i++)
@@ -163,17 +215,69 @@ public class InfoHandler : MonoBehaviour
             PersonalEntry correctData = dataAssigner.PersonalData.personalEntries[currentPersonIndex];
 
             int matches = 0;
-            if (playerInput[0] == correctData.bioNIK) matches++;
-            if (playerInput[1] == correctData.bioName) matches++;
-            if (playerInput[2] == correctData.bioTanggalLahir) matches++;
-            if (playerInput[3] == correctData.bioAlamat) matches++;
-            if (playerInput[4] == correctData.bioRequest) matches++;
+
+            if (!string.IsNullOrEmpty(playerInput[0]) && playerInput[0] == correctData.bioNomorSurat) matches++;
+            if (!string.IsNullOrEmpty(playerInput[1]) && playerInput[1] == correctData.bioNIK) matches++;
+            if (!string.IsNullOrEmpty(playerInput[2]) && playerInput[2] == correctData.bioName) matches++;
+            if (!string.IsNullOrEmpty(playerInput[3]) && playerInput[3] == correctData.bioTanggalLahir) matches++;
+            if (!string.IsNullOrEmpty(playerInput[4]) && playerInput[4] == correctData.bioJenisKelamin) matches++;
+            if (!string.IsNullOrEmpty(playerInput[5]) && playerInput[5] == correctData.statusPerkawinan) matches++;
+            if (!string.IsNullOrEmpty(playerInput[6]) && playerInput[6] == correctData.pekerjaan) matches++;
+            if (!string.IsNullOrEmpty(playerInput[7]) && playerInput[7] == correctData.bioAlamat) matches++;
+            if (!string.IsNullOrEmpty(playerInput[8]) && playerInput[8] == correctData.bioPurpose) matches++;
+            if (!string.IsNullOrEmpty(playerInput[9]) && playerInput[9] == correctData.bioNamaPemohon) matches++;
+
+            // Use the document type to modify how the data is checked
+            switch (documentType.document)
+            {
+                case "Kehilangan":
+                    if (!string.IsNullOrEmpty(playerInput[10]) && playerInput[10] == correctData.bioTanggalSurat) matches++;
+                    if (!string.IsNullOrEmpty(playerInput[11]) && playerInput[11] == correctData.bioBarang) matches++;
+                    if (!string.IsNullOrEmpty(playerInput[12]) && playerInput[12] == correctData.bioAtasNama) matches++;
+                    if (!string.IsNullOrEmpty(playerInput[13]) && playerInput[13] == correctData.bioAtasNIK) matches++;
+                    break;
+
+                case "Domisili":
+                    // Check the relevant fields for "Domisili"
+                    Debug.Log("Domisili");
+                    break;
+
+                case "Usaha":
+                    // Check the relevant fields for "Usaha"
+                    if (!string.IsNullOrEmpty(playerInput[14]) && playerInput[14] == correctData.bioJenisJasa) matches++;
+                    if (!string.IsNullOrEmpty(playerInput[15]) && playerInput[15] == correctData.bioLetakJasa) matches++;
+                    break;
+
+                default:
+                    Debug.LogWarning("No valid document type selected.");
+                    break;
+            }
 
             Debug.Log($"Player filled {matches} fields correctly out of 5.");
 
-            if (matches == 5)
+            switch (documentType.document)
             {
-                correctDocuments++;
+                case "Kehilangan":
+                    if (matches == 14)
+                    {
+                        correctDocuments++;
+                    }
+                    break;
+                case "Domisili":
+                    if (matches == 10)
+                    {
+                        correctDocuments++;
+                    }
+                    break;
+                case "Usaha":
+                    if (matches == 12)
+                    {
+                        correctDocuments++;
+                    }
+                    break;
+                default:
+                    Debug.Log("No valid document type selected");
+                    break;
             }
 
             // Optionally, update UI to reflect the score
@@ -184,6 +288,7 @@ public class InfoHandler : MonoBehaviour
             Debug.LogError("currentPersonIndex is out of range.");
         }
     }
+
 
     private void UpdateScoreUI()
     {
@@ -243,8 +348,6 @@ public class InfoHandler : MonoBehaviour
         }
     }
 
-
-
     private void AssignNextDataSet()
     {
         switch (currentDataSetIndex)
@@ -261,10 +364,72 @@ public class InfoHandler : MonoBehaviour
             case 4:
                 AssignDataToDraggableItems(data.request);
                 break;
+            case 5:
+                AssignDataToDraggableItems(data.noSurat);
+                break;
+            case 6:
+                AssignDataToDraggableItems(data.jenisKelamin);
+                break;
+            case 7:
+                AssignDataToDraggableItems(data.statusPerkawinan);
+                break;
+            case 8:
+                AssignDataToDraggableItems(data.pekerjaan);
+                break;
+            case 9:
+                AssignDataToDraggableItems(data.request);
+                break;
             default:
-                Debug.LogWarning("No more data sets to assign.");
                 break;
         }
+
+        Debug.Log("Document type: " + documentType.document);
+
+
+        switch (documentType.document)
+        {
+            case "Kehilangan":
+                switch (currentDataSetIndex)
+                {
+                    case 10:
+                        AssignDataToDraggableItems(data.tanggalSurat);
+                        break;
+                    case 11:
+                        AssignDataToDraggableItems(data.barang);
+                        break;
+                    case 12:
+                        AssignDataToDraggableItems(data.atasNama);
+                        break;
+                    case 13:
+                        AssignDataToDraggableItems(data.atasNIK);
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case "Domisili":
+                break;
+            case "Usaha":
+                switch (currentDataSetIndex)
+                {
+                    case 10:
+                        AssignDataToDraggableItems(data.jenisJasa);
+                        break;
+                    case 11:
+                        AssignDataToDraggableItems(data.letakJasa);
+                        break;
+                    default:
+                        Debug.LogWarning("No more data sets to assign.");
+                        break;
+                }
+                break;
+            default:
+                Debug.Log("No valid document type selected");
+                break;
+        }
+
+        Debug.Log("Current data set index: " + currentDataSetIndex);
+
     }
 
     private void FinalScore(int point)

@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a344cca322b4ba3428ee20bfea77c1b9, type: 3}
+  m_Name: Day 4 2of2 - RandomizedData
+  m_EditorClassIdentifier: 
+  noSurat:
+  - 016/KG/2024
+  - 017/KG/2024
+  - 018/KG/2024
+  - 019/KG/2024
+  - 020/KG/2024
+  names:
+  - Diana
+  - Ripia
+  - Anton
+  - Zandy
+  - Zackary
+  nik:
+  - 181964518
+  - 316798012
+  - 873769194
+  - 138357587
+  - 116140653
+  tanggalLahir:
+  - 15/12/1998
+  - 23/05/1984
+  - 16/05/1994
+  - 01/10/1990
+  - 07/07/1997
+  jenisKelamin:
+  - Laki-Laki
+  - Perempuan
+  - Laki-Laki
+  - Perempuan
+  - Laki-Laki
+  statusPerkawinan:
+  - Belum Menikah
+  - Menikah
+  - Cerai
+  - Menikah
+  - Cerai
+  pekerjaan:
+  - Buruh
+  - PNS
+  - Wirausaha
+  - Pedagang
+  - Judi
+  alamat:
+  - Gang 4
+  - Lembah Pulau
+  - Mokey Mokey
+  - asdwka
+  - Rumah
+  request:
+  - Keuangan
+  - Keamanan
+  - Kerja
+  - Pelaporan
+  - Perpindahan
+  namaPemohon:
+  - Diana
+  - Ripia
+  - Anton
+  - Zandy
+  - Zackary
+  tanggalSurat:
+  - 23/10/2024
+  - 01/10/2024
+  - 13/08/2024
+  - 21/10/2024
+  - 30/10/2024
+  barang:
+  - SIM
+  - Dompet
+  - Akte
+  - KK
+  - Kucing
+  atasNama:
+  - Diana
+  - Ripia
+  - Anton
+  - Zandy
+  - Zackary
+  atasNIK:
+  - 181964518
+  - 316798012
+  - 873769194
+  - 138357587
+  - 116140653
+  jenisJasa:
+  - Jualan
+  - Usaha
+  - Narkoba
+  - Monyet
+  - Capek
+  letakJasa:
+  - Gg 4
+  - Gg 45
+  - Gg 945
+  - Gg 1945
+  - Gg 1

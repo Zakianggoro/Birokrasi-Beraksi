@@ -5,36 +5,55 @@ using UnityEngine.SceneManagement;
 
 public class Komik : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> panels; // List of panels containing the images
-    [SerializeField] private List<Animator> animators; // List of animators for each panel's image
+    [SerializeField] private Animator comicAnimator; // Single animator handling the entire sequence
+    [SerializeField] private string animationTrigger = "StartComic"; // Trigger to start the comic animation
 
-    private int currentPanelIndex = 0; // To keep track of the current panel being activated
+    private int pauseCount = 0; // Tracks how many pauses have happened
+    private bool canProceed = false;  // Controls whether the player can click to continue
+
+    void Start()
+    {
+        // Start the comic animation
+        comicAnimator.SetTrigger(animationTrigger);
+        comicAnimator.speed = 0.5f;
+        canProceed = false;
+    }
 
     void Update()
     {
-        // Check for any mouse click (left mouse button or touch)
-        if (Input.GetMouseButtonDown(0))
+        // Wait for player input to proceed the animation after a pause
+        if (canProceed && Input.GetMouseButtonDown(0))
         {
-            ActivateNextImage();
+            ResumeAnimation();
         }
     }
 
-    void ActivateNextImage()
+    // Animation event: Call this at key moments in the animation when panels slide into place
+    public void PauseForPlayerInput()
     {
-        // Check if there are panels left to activate
-        if (currentPanelIndex < panels.Count)
-        {
-            // Activate the current panel and play its animation
-            panels[currentPanelIndex].SetActive(true);
-            Animator panelAnimator = animators[currentPanelIndex];
-            panelAnimator.SetTrigger("ShowImage"); // Trigger animation (assuming you have a "ShowImage" trigger)
+        canProceed = true;
+        comicAnimator.speed = 0;  // Pause the animation
+        Debug.Log($"Paused at panel {pauseCount + 1}, waiting for player input.");
+    }
 
-            currentPanelIndex++;
-        }
-        else
+    void ResumeAnimation()
+    {
+        canProceed = false;
+        pauseCount++;
+        comicAnimator.speed = 0.25f;  // Resume the animation
+        Debug.Log($"Resuming animation from panel {pauseCount}.");
+
+        if( pauseCount == 4 )
         {
-            // If all panels have been activated, reset or do other actions
-            Debug.Log("All images have been activated.");
+            OnComicEnd();
         }
+    }
+
+    // Animation event: Call this when the full animation is done
+    public void OnComicEnd()
+    {
+        Debug.Log("Comic animation sequence complete.");
+        // Optionally, trigger another action, such as progressing to the next level
+        SceneManager.LoadScene("Main Menu");
     }
 }

@@ -500,7 +500,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 826122145}
-  - component: {fileID: 826122146}
   m_Layer: 5
   m_Name: Panel Manager
   m_TagString: Untagged
@@ -528,24 +527,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &826122146
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 826122144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8651b086570530044933efc71cccc564, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panels:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  animators: []
 --- !u!1 &1589904374
 GameObject:
   m_ObjectHideFlags: 0
@@ -661,6 +642,7 @@ GameObject:
   - component: {fileID: 1625455924}
   - component: {fileID: 1625455923}
   - component: {fileID: 1625455925}
+  - component: {fileID: 1625455926}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -750,6 +732,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1625455926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1625455921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8651b086570530044933efc71cccc564, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comicAnimator: {fileID: 1625455925}
+  animationTrigger: StartComic
 --- !u!1 &1879452363
 GameObject:
   m_ObjectHideFlags: 0
