@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 53c831c90da5cf64883e2d6edc018acd
+guid: 52f8be3a6ee9cb04fa9a619aaec88390
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -45,11 +45,11 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 64
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 60, y: 72, z: 1342, w: 72}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9f6709b33ac5d0478f69b26255c6ab1
-      internalID: 656856172
+      spriteID: 05851362fb074d043b43259c70162265
+      internalID: -1418056553
       vertices: []
       indices: 
       edges: []
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4baf52168bba55541970db98ed7f0781
-      internalID: 1978616327
+      spriteID: 41e39df2e5d5293498149f6b831150f1
+      internalID: -1459891481
       vertices: []
       indices: 
       edges: []
@@ -155,15 +155,15 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Clip board 1920 x 1080_0: 656856172
-      Clip board 1920 x 1080_1: 1978616327
+      Clip board 1920 x 1080_0: -1418056553
+      Clip board 1920 x 1080_1: -1459891481
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
