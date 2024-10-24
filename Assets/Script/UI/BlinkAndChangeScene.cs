@@ -11,6 +11,10 @@ public class SceneTransitionWithBlinkPanel : MonoBehaviour
     [SerializeField] private float fadeDuration = 1f; // Duration of the fade-in/out effect
     [SerializeField] private float waitBeforeSceneChange = 1.5f; // Time to wait before changing the scene
 
+    [Header("Optional Sound Settings")]
+    [SerializeField] private bool playSoundOnClick = false; // Toggle sound on/off
+    [SerializeField] private AudioSource clickSound; // Reference to the audio source for the sound
+
     private CanvasGroup blinkPanelCanvasGroup;
 
     void Start()
@@ -29,6 +33,12 @@ public class SceneTransitionWithBlinkPanel : MonoBehaviour
 
     public void DeactivatePanelsAndChangeScene()
     {
+        // Check if sound should be played
+        if (playSoundOnClick && clickSound != null)
+        {
+            clickSound.Play();  // Play the sound
+        }
+
         StartCoroutine(DeactivatePanels());
     }
 
