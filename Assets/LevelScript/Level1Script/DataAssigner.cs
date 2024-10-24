@@ -6,12 +6,18 @@ using UnityEngine.UI;
 
 public class DataAssigner : MonoBehaviour
 {
+    [Header("Reference")]
     [SerializeField] private PersonalData personalData; // Reference to the ScriptableObject
-    [SerializeField] private TextMeshProUGUI nameText;  // The UI text element for the name
+    [SerializeField] private DocumentType documentType;
+    [SerializeField] private TextMeshProUGUI scrollText;
+
     [SerializeField] private TextMeshProUGUI nikText;   // The UI text element for NIK
+    [SerializeField] private TextMeshProUGUI nameText;  // The UI text element for the name
     [SerializeField] private TextMeshProUGUI tanggalLahirText; // For birth date
+    [SerializeField] private TextMeshProUGUI jenisKelaminText;
     [SerializeField] private TextMeshProUGUI alamatText;  // For address
-    [SerializeField] private TextMeshProUGUI requestText; // For request
+    [SerializeField] private TextMeshProUGUI statusPerkawinanText; // For status
+    [SerializeField] private TextMeshProUGUI pekerjaanText;   // The UI text element for NIK
 
     // Optional: References to field backgrounds for highlighting
     [SerializeField] private Image[] fieldBackgrounds; // Assign in Inspector
@@ -27,6 +33,7 @@ public class DataAssigner : MonoBehaviour
         {
             Debug.Log("Personal Data Found: " + personalData.personalEntries.Count + " entries available.");
             DisplayPersonalData(currentIndex); // Display the first entry at start
+            DisplayDataChronology(currentIndex);
         }
         else
         {
@@ -54,11 +61,15 @@ public class DataAssigner : MonoBehaviour
         {
             // Get the current entry and assign it to the UI
             PersonalEntry entry = personalData.personalEntries[index];
+
+
+            nikText.text = $"NIK : {entry.bioNIK}";
             nameText.text = entry.bioName;
-            nikText.text = entry.bioNIK;
             tanggalLahirText.text = entry.bioTanggalLahir;
+            jenisKelaminText.text = entry.bioJenisKelamin;
             alamatText.text = entry.bioAlamat;
-            requestText.text = entry.bioPurpose;
+            statusPerkawinanText.text = entry.statusPerkawinan;
+            pekerjaanText.text = entry.pekerjaan;
 
             // Log the successful data assignment for debugging
             Debug.Log("Displaying Personal Data for index: " + index);
@@ -69,6 +80,39 @@ public class DataAssigner : MonoBehaviour
             Debug.LogWarning("Index out of bounds: No more entries to display.");
         }
     }
+
+    private string DisplayDataChronology(int index)
+    {
+        // Check if the index is valid
+        if (personalData == null)
+        {
+            Debug.LogError("Personal Data is not assigned!");
+            return string.Empty;  // Return an empty string instead of returning nothing
+        }
+
+        string content = "";
+
+        if (index >= 0 && index < personalData.personalEntries.Count)
+        {
+            // Get the current entry
+            PersonalEntry entry = personalData.personalEntries[index];
+
+            // Build the string with the required data
+            content = $"Nomor Surat  : {entry.bioNomorSurat}\n" +
+                      $"Tujuan            : {entry.bioPurpose}\n" +
+                      $"Kronologi        : \n" +
+                      $"{entry.bioKronologi}";
+        }
+        else
+        {
+            Debug.LogWarning("Index out of bounds: No more entries to display.");
+            content = "No data available";  // Return a message indicating no data
+        }
+
+        scrollText.text = content;
+        return scrollText.text;  // Return the final content
+    }
+
 
     // Optional: Expose field backgrounds for highlighting
     public Image[] FieldBackgrounds => fieldBackgrounds;

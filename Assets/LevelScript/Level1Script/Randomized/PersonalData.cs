@@ -28,6 +28,9 @@ public class PersonalEntry
     [Header("Usaha")]
     public string bioJenisJasa;
     public string bioLetakJasa;
+
+    [Header("Kronologi")]
+    public string bioKronologi;
 }
 
 [CreateAssetMenu(fileName = "PersonalDataList", menuName = "Biography/Personal Data List")]

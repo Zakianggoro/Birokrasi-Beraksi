@@ -12,15 +12,11 @@ public class StampManager : MonoBehaviour
     public GameObject timerObject;
     public GameObject clickCounterObject;
     public GameObject StartPanel;
-    /*public TMP_Text resultText;
-    public GameObject resultPanel;
-    public Image resultImage;
-    public Sprite winImage;
-    public Sprite loseImage;*/
     public Button clickButton;
 
     [SerializeField] private StampTimer timer;
     [SerializeField] private ClickToStamp clickCounter;
+    [SerializeField] private Animator anim;
 
     private bool gameStarted = false;
     private bool gameFinished = false;
@@ -40,7 +36,6 @@ public class StampManager : MonoBehaviour
         clickCounterObject.SetActive(false);
         //resultPanel.SetActive(false);
 
-
         /*retryButton.gameObject.SetActive(false);
         retryButton.onClick.AddListener(ReloadGame);*/
     }
@@ -51,6 +46,7 @@ public class StampManager : MonoBehaviour
         {
             gameStarted = true;
             StartPanel.SetActive(false);
+            anim.SetTrigger("Start");
             StartCoroutine(StartCountdownWithDelay(0f));
 
         }

@@ -13,51 +13,73 @@ public class FolderDetail : MonoBehaviour
     [SerializeField] private int personIndex;               // Index for the specific person's info
     private bool isPanelOpen = false;
 
+    private DragSprite dragSprite;  // Reference to DragSprite
+
+    // For detecting double-clicks
+    private int clickCount = 0;                     // To track the number of clicks
+    private float clickTimer = 0f;                  // To track the time between clicks
+    private float doubleClickThreshold = 0.3f;      // Time window for detecting a double-click
+
     private void Start()
     {
-        // Ensure the panel is hidden at the start
         documentPanel.SetActive(false);
-    }
-
-    // This method gets called when clicking the folder GameObject
-    private void OnMouseDown()
-    {
-        Debug.Log("Folder clicked!"); // Check if this is triggered
-
-        if (!isPanelOpen)
-        {
-            ShowDocumentPanel();
-        }
+        dragSprite = GetComponent<DragSprite>();    // Assuming both scripts are on the same GameObject
     }
 
     private void Update()
     {
-        // Close the panel if it is open and the user clicks outside of it
+        // Count time between clicks
+        if (clickCount == 1)
+        {
+            clickTimer += Time.deltaTime;
+            if (clickTimer > doubleClickThreshold)
+            {
+                // Reset if no double-click occurs within the threshold
+                clickCount = 0;
+                clickTimer = 0f;
+            }
+        }
+
+        // Close the panel if it's open and the user clicks outside of it
         if (isPanelOpen && Input.GetMouseButtonDown(0) && !IsMouseOverPanel())
         {
-            Debug.Log("Clicked outside panel, closing.");
             CloseDocumentPanel();
+        }
+    }
+
+    private void OnMouseDown()
+    {
+        if (dragSprite.IsDragging())
+        {
+            // Prevent showing the document while dragging
+            return;
+        }
+
+        clickCount++;
+
+        if (clickCount == 1)
+        {
+            // First click, start the timer
+            clickTimer = 0f;
+        }
+        else if (clickCount == 2)
+        {
+            // Double-click detected
+            clickCount = 0;
+            ShowDocumentPanel();
         }
     }
 
     private void ShowDocumentPanel()
     {
-        Debug.Log("Showing document panel...");
-
-        // Fill in the KTP and Kronologi details
         textKTP.text = GetPersonDetails();
         textKronologi.text = kronologi;
-
-        // Show the panel
         documentPanel.SetActive(true);
         isPanelOpen = true;
     }
 
     private void CloseDocumentPanel()
     {
-        Debug.Log("Closing document panel...");
-
-        // Hide the panel
         documentPanel.SetActive(false);
         isPanelOpen = false;
     }
@@ -81,7 +103,6 @@ public class FolderDetail : MonoBehaviour
 
     private bool IsMouseOverPanel()
     {
-        // Use RectTransformUtility to check if the mouse is over the panel UI
         RectTransform panelRectTransform = documentPanel.GetComponent<RectTransform>();
         Vector2 localMousePosition = panelRectTransform.InverseTransformPoint(Input.mousePosition);
         return panelRectTransform.rect.Contains(localMousePosition);

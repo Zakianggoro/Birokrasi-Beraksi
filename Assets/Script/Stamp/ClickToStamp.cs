@@ -8,6 +8,8 @@ public class ClickToStamp : MonoBehaviour
 {
     public TextMeshProUGUI totalClicksText;
     [SerializeField] private float goalClick = 60;
+    [SerializeField] private Animator anim;
+
     private float totalClicks;
 
     private void Update()
@@ -18,6 +20,7 @@ public class ClickToStamp : MonoBehaviour
     public void AddClicks()
     {
         totalClicks++;
+        anim.SetTrigger("Stamp");
         totalClicksText.text = totalClicks.ToString() + "/" + goalClick.ToString();
     }
 
