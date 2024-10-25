@@ -211,6 +211,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2708013407210707693, guid: 1ac40982b3a4a3d46a1cafaade5a9f75, type: 3}
+      propertyPath: panelActivations.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708013407210707693, guid: 1ac40982b3a4a3d46a1cafaade5a9f75, type: 3}
+      propertyPath: panelActivations.Array.data[0].previousSceneIndex
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708013407210707693, guid: 1ac40982b3a4a3d46a1cafaade5a9f75, type: 3}
+      propertyPath: panelActivations.Array.data[1].previousSceneIndex
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708013407210707693, guid: 1ac40982b3a4a3d46a1cafaade5a9f75, type: 3}
+      propertyPath: panelActivations.Array.data[0].panelsToActivate.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708013407210707693, guid: 1ac40982b3a4a3d46a1cafaade5a9f75, type: 3}
+      propertyPath: panelActivations.Array.data[1].panelsToActivate.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3797995476773305168, guid: 1ac40982b3a4a3d46a1cafaade5a9f75, type: 3}
+      propertyPath: timedPanelActivations.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4780632821765603766, guid: 1ac40982b3a4a3d46a1cafaade5a9f75, type: 3}
       propertyPath: m_Name
       value: Misc

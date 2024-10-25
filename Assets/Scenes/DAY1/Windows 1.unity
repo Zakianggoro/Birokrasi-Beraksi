@@ -10272,25 +10272,41 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2708013407210707693, guid: 1ac40982b3a4a3d46a1cafaade5a9f75, type: 3}
+      propertyPath: panelActivations.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708013407210707693, guid: 1ac40982b3a4a3d46a1cafaade5a9f75, type: 3}
       propertyPath: panelActivations.Array.data[0].previousSceneIndex
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2708013407210707693, guid: 1ac40982b3a4a3d46a1cafaade5a9f75, type: 3}
-      propertyPath: panelActivations.Array.data[0].panelsToActivate.Array.data[0]
-      value: 
-      objectReference: {fileID: 337836170}
+      propertyPath: panelActivations.Array.data[1].previousSceneIndex
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2708013407210707693, guid: 1ac40982b3a4a3d46a1cafaade5a9f75, type: 3}
-      propertyPath: panelActivations.Array.data[0].panelsToActivate.Array.data[1]
+      propertyPath: panelActivations.Array.data[0].panelsToActivate.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708013407210707693, guid: 1ac40982b3a4a3d46a1cafaade5a9f75, type: 3}
+      propertyPath: panelActivations.Array.data[1].panelsToActivate.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2708013407210707693, guid: 1ac40982b3a4a3d46a1cafaade5a9f75, type: 3}
+      propertyPath: panelActivations.Array.data[0].panelsToActivate.Array.data[0]
       value: 
       objectReference: {fileID: 2142592606}
     - target: {fileID: 2708013407210707693, guid: 1ac40982b3a4a3d46a1cafaade5a9f75, type: 3}
-      propertyPath: panelActivations.Array.data[0].panelsToActivate.Array.data[2]
+      propertyPath: panelActivations.Array.data[0].panelsToActivate.Array.data[1]
       value: 
       objectReference: {fileID: 1789650826}
     - target: {fileID: 2708013407210707693, guid: 1ac40982b3a4a3d46a1cafaade5a9f75, type: 3}
-      propertyPath: panelActivations.Array.data[1].panelsToActivate.Array.data[0]
+      propertyPath: panelActivations.Array.data[0].panelsToActivate.Array.data[2]
       value: 
       objectReference: {fileID: 337836170}
+    - target: {fileID: 2708013407210707693, guid: 1ac40982b3a4a3d46a1cafaade5a9f75, type: 3}
+      propertyPath: panelActivations.Array.data[1].panelsToActivate.Array.data[0]
+      value: 
+      objectReference: {fileID: 1594022850}
     - target: {fileID: 2708013407210707693, guid: 1ac40982b3a4a3d46a1cafaade5a9f75, type: 3}
       propertyPath: panelActivations.Array.data[1].panelsToActivate.Array.data[1]
       value: 
