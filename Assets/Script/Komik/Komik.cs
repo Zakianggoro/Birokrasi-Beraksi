@@ -7,6 +7,7 @@ public class Komik : MonoBehaviour
 {
     [SerializeField] private Animator comicAnimator; // Single animator handling the entire sequence
     [SerializeField] private string animationTrigger = "StartComic"; // Trigger to start the comic animation
+    [SerializeField] private string levelName;
 
     private int pauseCount = 0; // Tracks how many pauses have happened
     private bool canProceed = false;  // Controls whether the player can click to continue
@@ -55,6 +56,6 @@ public class Komik : MonoBehaviour
     {
         Debug.Log("Comic animation sequence complete.");
         // Optionally, trigger another action, such as progressing to the next level
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene(levelName);
     }
 }
