@@ -1,17 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
+using static UnityEngine.EventSystems.EventTrigger;
 
 public class FolderDetail : MonoBehaviour
 {
+    [SerializeField] private Image ktpLaki;
+    [SerializeField] private Image ktpPerempuan;
     [SerializeField] private TextMeshProUGUI textKTP;       // Text for ID Card (KTP)
+    [SerializeField] private TextMeshProUGUI textKTPNIK;
     [SerializeField] private TextMeshProUGUI textKronologi; // Text for Kronologi
     [SerializeField] private GameObject documentPanel;      // Panel to display details
     [SerializeField] private Names personInfo;              // Reference to the ScriptableObject holding names
     [SerializeField] private string kronologi;              // Kronologi text
     [SerializeField] private int personIndex;               // Index for the specific person's info
     private bool isPanelOpen = false;
+    private string defaultText = "";
 
     private DragSprite dragSprite;  // Reference to DragSprite
 
@@ -23,6 +29,17 @@ public class FolderDetail : MonoBehaviour
     private void Start()
     {
         documentPanel.SetActive(false);
+
+        if (ktpLaki != null && ktpPerempuan != null)
+        {
+            ktpLaki.enabled = false;
+            ktpPerempuan.enabled = false;
+        }
+
+        textKTP.text = defaultText;
+        textKTPNIK.text = "";
+        textKronologi.text = defaultText;
+
         dragSprite = GetComponent<DragSprite>();    // Assuming both scripts are on the same GameObject
     }
 
@@ -72,7 +89,27 @@ public class FolderDetail : MonoBehaviour
 
     private void ShowDocumentPanel()
     {
+        if (personIndex < 0 || personIndex >= personInfo.names.Length)
+        {
+            Debug.Log("Out of Bounds");
+        }
+
+        if (personInfo.jenisKelamin[personIndex] == "Laki-Laki")
+        {
+            ktpLaki.enabled = true;
+        }
+        else if (personInfo.jenisKelamin[personIndex] == "Perempuan")
+        {
+            ktpPerempuan.enabled = true;
+        }
+        else
+        {
+            Debug.Log("Wrong Gender");
+
+        }
+
         textKTP.text = GetPersonDetails();
+        textKTPNIK.text = GetPersonalNIK();
         textKronologi.text = kronologi;
         documentPanel.SetActive(true);
         isPanelOpen = true;
@@ -80,10 +117,23 @@ public class FolderDetail : MonoBehaviour
 
     private void CloseDocumentPanel()
     {
+        if (ktpLaki != null && ktpPerempuan != null)
+        {
+            ktpLaki.enabled = false;
+            ktpPerempuan.enabled = false;
+        }
+        textKTP.text = defaultText;
+        textKTPNIK.text = "";
+        textKronologi.text = defaultText;
         documentPanel.SetActive(false);
         isPanelOpen = false;
     }
 
+    private string GetPersonalNIK()
+    {
+        string NIK = $"NIK : {personInfo.nik[personIndex]}";
+        return NIK;
+    }
     private string GetPersonDetails()
     {
         if (personIndex < 0 || personIndex >= personInfo.names.Length)
@@ -91,13 +141,12 @@ public class FolderDetail : MonoBehaviour
             return "Invalid Person Data";
         }
 
-        string personDetails = $"Name       : {personInfo.names[personIndex]}\n" +
-                               $"NIK        : {personInfo.nik[personIndex]}\n" +
-                               $"DOB        : {personInfo.tanggalLahir[personIndex]}\n" +
-                               $"Sex        : {personInfo.jenisKelamin[personIndex]}\n" +
-                               $"Address    : {personInfo.alamat[personIndex]}\n" +
-                               $"Status     : {personInfo.statusPerkawinan[personIndex]}\n" +
-                               $"Pekerjaan  : {personInfo.pekerjaan[personIndex]}";
+        string personDetails = $"Nama                     : {personInfo.names[personIndex]}\n" +
+                               $"Tanggal Lahir     \t : {personInfo.tanggalLahir[personIndex]}\n" +
+                               $"Jenis Kelamin     \t : {personInfo.jenisKelamin[personIndex]}\n" +
+                               $"Alamat            \t : {personInfo.alamat[personIndex]}\n" +
+                               $"Status Perkawinan : {personInfo.statusPerkawinan[personIndex]}\n" +
+                               $"Pekerjaan               : {personInfo.pekerjaan[personIndex]}";
         return personDetails;
     }
 

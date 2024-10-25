@@ -40,6 +40,10 @@ public class StampManager : MonoBehaviour
         retryButton.onClick.AddListener(ReloadGame);*/
     }
 
+    private void Update()
+    {
+      
+    }
     public void StartGame()
     {
         if (!gameStarted)

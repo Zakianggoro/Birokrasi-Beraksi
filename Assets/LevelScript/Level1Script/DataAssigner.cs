@@ -19,6 +19,10 @@ public class DataAssigner : MonoBehaviour
     [SerializeField] private TextMeshProUGUI statusPerkawinanText; // For status
     [SerializeField] private TextMeshProUGUI pekerjaanText;   // The UI text element for NIK
 
+    [Header("Image KTP")]
+    [SerializeField] private Image ktpLaki;
+    [SerializeField] private Image ktpPerempuan;
+
     // Optional: References to field backgrounds for highlighting
     [SerializeField] private Image[] fieldBackgrounds; // Assign in Inspector
 
@@ -28,6 +32,12 @@ public class DataAssigner : MonoBehaviour
     {
         // Log the start event for debugging purposes
         Debug.Log("DataAssigner Start - Checking Personal Data");
+
+        if(ktpLaki != null && ktpPerempuan != null)
+        {
+            ktpLaki.enabled = false;
+            ktpPerempuan.enabled = false;
+        }
 
         if (personalData != null && personalData.personalEntries.Count > 0)
         {
@@ -57,11 +67,30 @@ public class DataAssigner : MonoBehaviour
             return;
         }
 
+        if (ktpLaki != null && ktpPerempuan != null)
+        {
+            ktpLaki.enabled = false;
+            ktpPerempuan.enabled = false;
+        }
+
         if (index >= 0 && index < personalData.personalEntries.Count)
         {
             // Get the current entry and assign it to the UI
             PersonalEntry entry = personalData.personalEntries[index];
 
+            if (entry.bioJenisKelamin == "Laki-Laki")
+            {
+                ktpLaki.enabled = true;
+            }
+            else if (entry.bioJenisKelamin == "Perempuan")
+            {
+                ktpPerempuan.enabled = true;
+            }
+            else
+            {
+                Debug.Log("Wrong Gender");
+
+            }
 
             nikText.text = $"NIK : {entry.bioNIK}";
             nameText.text = entry.bioName;
