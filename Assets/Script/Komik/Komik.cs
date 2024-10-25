@@ -45,7 +45,8 @@ public class Komik : MonoBehaviour
 
         if( pauseCount == 4 )
         {
-            OnComicEnd();
+            comicAnimator.SetTrigger("Zoom");
+            pauseCount++;
         }
     }
 
