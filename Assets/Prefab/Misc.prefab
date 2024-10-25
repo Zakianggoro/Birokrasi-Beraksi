@@ -49,16 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 094e522f53bd5254b9866df9f3d1dd3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  panelActivations:
-  - previousSceneIndex: 2
-    panelsToActivate:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-  - previousSceneIndex: 4
-    panelsToActivate:
-    - {fileID: 0}
-    - {fileID: 0}
+  panelActivations: []
 --- !u!114 &9000355762019253826
 MonoBehaviour:
   m_ObjectHideFlags: 0
