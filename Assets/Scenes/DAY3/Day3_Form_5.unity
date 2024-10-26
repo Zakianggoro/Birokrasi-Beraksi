@@ -599,6 +599,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1848105767185184849, guid: 000308ea6e28c564bbe2c2997ea3e4bb, type: 3}
   m_PrefabInstance: {fileID: 7509369348608991976}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1372308366 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6206799557629429531, guid: ed013139f21bbbe4db998ff325a87cc4, type: 3}
+  m_PrefabInstance: {fileID: 7185436180015095754}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b743370ac3e4ec2a1668f5455a8ef8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1391712500 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3342509605348122991, guid: 000308ea6e28c564bbe2c2997ea3e4bb, type: 3}
@@ -1427,23 +1438,12 @@ PrefabInstance:
     - target: {fileID: 8427169036257382161, guid: ed013139f21bbbe4db998ff325a87cc4, type: 3}
       propertyPath: personalData
       value: 
-      objectReference: {fileID: 11400000, guid: 62a0f7360e6eb574f91b7503b98a43cf, type: 2}
+      objectReference: {fileID: 11400000, guid: ce0d3cc3155013b46b58a943601fa203, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed013139f21bbbe4db998ff325a87cc4, type: 3}
---- !u!114 &7185436180015095755 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6206799557629429531, guid: ed013139f21bbbe4db998ff325a87cc4, type: 3}
-  m_PrefabInstance: {fileID: 7185436180015095754}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b743370ac3e4ec2a1668f5455a8ef8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &7509369348608991976
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1568,9 +1568,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4928498969450829379, guid: 7e283aceb31c5cd479fef5a8120a3149, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: 76ebb62a97a510e4583539417529fd95, type: 2}
+    - target: {fileID: 4928498969450829379, guid: 7e283aceb31c5cd479fef5a8120a3149, type: 3}
       propertyPath: dropDown
       value: 
-      objectReference: {fileID: 7185436180015095755}
+      objectReference: {fileID: 1372308366}
     - target: {fileID: 4928498969450829379, guid: 7e283aceb31c5cd479fef5a8120a3149, type: 3}
       propertyPath: headerText
       value: 
