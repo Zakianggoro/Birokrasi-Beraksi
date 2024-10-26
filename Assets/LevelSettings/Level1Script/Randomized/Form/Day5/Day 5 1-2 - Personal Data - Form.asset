@@ -14,38 +14,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   personalEntries:
   - bioDocType: Domisili
-    bioNomorSurat: 
-    bioName: 
-    bioNIK: 
-    bioTanggalLahir: 
-    bioJenisKelamin: 
-    statusPerkawinan: 
-    pekerjaan: 
-    bioAlamat: 
-    bioPurpose: 
-    bioNamaPemohon: 
+    bioNomorSurat: 025/DL/2024
+    bioName: Aulia Safira
+    bioNIK: 35071230870025
+    bioTanggalLahir: 9 September 1987
+    bioJenisKelamin: Perempuan
+    statusPerkawinan: Belum Menikah
+    pekerjaan: Mahasiswa
+    bioAlamat: Jl. Kemuning No. 9
+    bioPurpose: Pendaftaran Beasiswa
+    bioNamaPemohon: Aulia Safira
     bioTanggalSurat: 
     bioBarang: 
     bioAtasNama: 
     bioAtasNIK: 
     bioJenisJasa: 
     bioLetakJasa: 
-    bioKronologi: 
+    bioKronologi: Aulia Safira mengajukan Surat Keterangan Domisili untuk pendaftaran
+      beasiswa luar negeri. Surat ini diperlukan sebagai dokumen pendukung saat mengajukan
+      aplikasi beasiswa.
   - bioDocType: Usaha
-    bioNomorSurat: 
-    bioName: 
-    bioNIK: 
-    bioTanggalLahir: 
-    bioJenisKelamin: 
-    statusPerkawinan: 
-    pekerjaan: 
-    bioAlamat: 
-    bioPurpose: 
-    bioNamaPemohon: 
+    bioNomorSurat: 025/SKU/2024
+    bioName: Shafir Inayah
+    bioNIK: 30144874150005
+    bioTanggalLahir: 11 September 1985
+    bioJenisKelamin: Perempuan
+    statusPerkawinan: Belum Menikah
+    pekerjaan: Wirausaha
+    bioAlamat: Jl. Keming No. 6
+    bioPurpose: Pembuatan NPWP
+    bioNamaPemohon: Shafir Inayah
     bioTanggalSurat: 
     bioBarang: 
     bioAtasNama: 
     bioAtasNIK: 
-    bioJenisJasa: 
-    bioLetakJasa: 
-    bioKronologi: 
+    bioJenisJasa: Warung Sembako
+    bioLetakJasa: Jl. Anggrek No. 3
+    bioKronologi: Aulia Safira memiliki warung sembako di Jl. Anggrek No. 3 sejak
+      2017. Ia mengajukan Surat Keterangan Usaha untuk kemudahan kedepannya.

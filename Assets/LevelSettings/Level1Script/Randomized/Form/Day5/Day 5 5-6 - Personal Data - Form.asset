@@ -13,39 +13,44 @@ MonoBehaviour:
   m_Name: Day 5 5-6 - Personal Data - Form
   m_EditorClassIdentifier: 
   personalEntries:
-  - bioDocType: 
-    bioNomorSurat: 
-    bioName: 
-    bioNIK: 
-    bioTanggalLahir: 
-    bioJenisKelamin: 
-    statusPerkawinan: 
-    pekerjaan: 
-    bioAlamat: 
-    bioPurpose: 
-    bioNamaPemohon: 
+  - bioDocType: Kehilangan
+    bioNomorSurat: 028/KG/2024
+    bioName: Budi Santoso
+    bioNIK: 35071230876028
+    bioTanggalLahir: 15 Februari 1987
+    bioJenisKelamin: Laki-Laki
+    statusPerkawinan: Menikah
+    pekerjaan: Mahasiswa
+    bioAlamat: Jl. Anggrek No. 5
+    bioPurpose: Daftar Kerja
+    bioNamaPemohon: Budi Santoso
+    bioTanggalSurat: 3 Oktober 2024
+    bioBarang: KTP
+    bioAtasNama: Budi Santoso
+    bioAtasNIK: 35071230876028
+    bioJenisJasa: 
+    bioLetakJasa: 
+    bioKronologi: Budi Santoso melaporkan kehilangan KTP pada tanggal 3 Oktober 2024.
+      Dia mengajukan permohonan pembuatan KTP baru guna keperluan pengurusan identitas
+      pegawai yang diperlukan untuk pendaftaran pekerjaan.
+  - bioDocType: Usaha
+    bioNomorSurat: 028/SKU/2024
+    bioName: Ripia Ranegata
+    bioNIK: 35194991225001
+    bioTanggalLahir: 12 Juni 1985
+    bioJenisKelamin: Laki-Laki
+    statusPerkawinan: Menikah
+    pekerjaan: PNS
+    bioAlamat: Jl. Belitung No. 6
+    bioPurpose: Rekening Usaha
+    bioNamaPemohon: Ripia Ranegata
     bioTanggalSurat: 
     bioBarang: 
     bioAtasNama: 
     bioAtasNIK: 
-    bioJenisJasa: 
-    bioLetakJasa: 
-    bioKronologi: 
-  - bioDocType: 
-    bioNomorSurat: 
-    bioName: 
-    bioNIK: 
-    bioTanggalLahir: 
-    bioJenisKelamin: 
-    statusPerkawinan: 
-    pekerjaan: 
-    bioAlamat: 
-    bioPurpose: 
-    bioNamaPemohon: 
-    bioTanggalSurat: 
-    bioBarang: 
-    bioAtasNama: 
-    bioAtasNIK: 
-    bioJenisJasa: 
-    bioLetakJasa: 
-    bioKronologi: 
+    bioJenisJasa: Warung Sembako
+    bioLetakJasa: Jl. Mawar No. 4
+    bioKronologi: Ripia Ranegata memiliki warung sembako di Jl. Mawar No. 4 sejak
+      2017. Ia mengajukan Surat Keterangan Usaha untuk pembukaan rekening usaha agar
+      transaksi usaha dapat dipisahkan dari rekening pribadinya dan lebih teratur
+      dalam pengelolaan keuangan usaha.

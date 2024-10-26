@@ -12,19 +12,99 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a344cca322b4ba3428ee20bfea77c1b9, type: 3}
   m_Name: Day 5 - RandomizedNames
   m_EditorClassIdentifier: 
-  noSurat: []
-  names: []
-  nik: []
-  tanggalLahir: []
-  jenisKelamin: []
-  statusPerkawinan: []
-  pekerjaan: []
-  alamat: []
-  request: []
-  namaPemohon: []
-  tanggalSurat: []
-  barang: []
-  atasNama: []
-  atasNIK: []
-  jenisJasa: []
-  letakJasa: []
+  noSurat:
+  - 028/KG/2024
+  - 028/SKU/2024
+  - 025/DL/2024
+  - 025/SKU/2024
+  - 030/DL/2024
+  names:
+  - Aulia Safira
+  - Shafir Inayah
+  - Ripia Ranegata
+  - Budi Santoso
+  - Hendy Mulyadi
+  nik:
+  - 35194991225001
+  - 35071230870025
+  - 35194991225001
+  - 30144874150005
+  - 31918485626004
+  tanggalLahir:
+  - 22 Juli 1984
+  - 11 September 1985
+  - 15 Februari 1987
+  - 12 Juni 1985
+  - 9 September 1987
+  jenisKelamin:
+  - Laki-Laki
+  - Perempuan
+  - Perempuan
+  - Laki-Laki
+  - Laki-Laki
+  statusPerkawinan:
+  - Menikah
+  - Belum Menikah
+  - Cerai
+  - Belum Menikah
+  - Menikah
+  pekerjaan:
+  - Petani
+  - Karyawan Swasta
+  - Mahasiswa
+  - Wirausaha
+  - PNS
+  alamat:
+  - Jl. Anggrek No. 5
+  - Jl. Tanjung No. 1
+  - Jl. Kemuning No. 9
+  - Jl. Keming No. 6
+  - Jl. Belitung No. 6
+  request:
+  - Pembuatan NPWP
+  - Peminjaman Modal
+  - Rekening Usaha
+  - Pendaftaran Beasiswa
+  - Daftar Kerja
+  namaPemohon:
+  - Aulia Safira
+  - Shafir Inayah
+  - Ripia Ranegata
+  - Budi Santoso
+  - Hendy Mulyadi
+  tanggalSurat:
+  - 29 Februari 2024
+  - 3 Oktober 2024
+  - 31 Oktober 2024
+  - 14 Februari 2024
+  - 1 Januari 2024
+  barang:
+  - Buku Rekening
+  - KTP
+  - SIM
+  - Uang
+  - Motor
+  atasNama:
+  - Aulia Safira
+  - Shafir Inayah
+  - Ripia Ranegata
+  - Budi Santoso
+  - Hendy Mulyadi
+  atasNIK:
+  - 35194991225001
+  - 35071230870025
+  - 35194991225001
+  - 30144874150005
+  - 31918485626004
+  jenisJasa:
+  - Design
+  - Warung Sembako
+  - Restoran
+  - Laundry
+  - Percetakan
+  letakJasa:
+  - Jl. Anggrek No. 3
+  - Jl. Sunao No. 6
+  - Jl. Mawar No. 4
+  - Jl. Anggrek No. 7
+  - Jl. Melon No. 5
