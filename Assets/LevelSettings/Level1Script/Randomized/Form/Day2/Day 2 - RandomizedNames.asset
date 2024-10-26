@@ -10,101 +10,101 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a344cca322b4ba3428ee20bfea77c1b9, type: 3}
-  m_Name: Day 1 - RandomizedNames
+  m_Name: Day 2 - RandomizedNames
   m_EditorClassIdentifier: 
   noSurat:
-  - 006/DL/2024
-  - 001/DL/2024
-  - 001/KG/2024
+  - 004/SKU/2024
+  - 001/SKU/2024
   - 003/SKU/2024
+  - 007/DL/2024
   - 004/KG/2024
   names:
-  - Ripia Ranegata
+  - Kuraini Turtelino
   - Ahmad Syahputra
-  - Putra Syaifudin
   - Dwi Handoko
-  - Sadala Sayurani
+  - Mulyono
+  - Hendro Baswe
   nik:
-  - 34815165548734
-  - 36984561799469
   - 35071220786004
-  - 35012309870001
-  - 39541658487651
+  - 35071230970001
+  - 36918947949518
+  - 35071220780007
+  - 31598487465123
   tanggalLahir:
-  - 12 Mei 1989
-  - 31 Juli 1976
-  - 12 Oktober 1994
-  - 10 Maret 1982
   - 22 Juni 1976
+  - 22 April 1980
+  - 20 Juli 1988
+  - 12 Mei 1989
+  - 12 Maret 1990
   jenisKelamin:
   - Laki-Laki
   - Perempuan
-  - Laki-Laki
+  - Perempuan
   - Laki-Laki
   - Perempuan
   statusPerkawinan:
   - Menikah
   - Belum Menikah
   - Cerai
-  - Menikah
   - Belum Menikah
+  - Menikah
   pekerjaan:
-  - Kurir
+  - Wirausaha
   - Guru
   - Karyawan Swasta
-  - Wirausaha
   - PNS
+  - Mahasiswa
   alamat:
-  - Jl. Mawar No. 5
-  - Jl. Suradu No. 6
-  - Jl. Manggar No. 4
+  - Mawar No. 5
+  - Jl. Melati No. 11
+  - Jl. Merak No. 12
+  - Jl. Anggur No. 4
   - Jl. Anggrek No. 3
-  - Jl. Dahlia No. 2
   request:
-  - Pindah Rumah
-  - BPJS
-  - Administrasi
-  - Penggantian KK
-  - Pendaftaran kerja
+  - Peminjaman Modal
+  - Izin Usaha
+  - Pemindahan
+  - Pendaftaran Beasiswa
+  - Pinjaman
   namaPemohon:
-  - Ripia Ranegata
+  - Kuraini Turtelino
   - Ahmad Syahputra
-  - Putra Syaifudin
   - Dwi Handoko
-  - Sadala Sayurani
+  - Mulyono
+  - Hendro Baswe
   tanggalSurat:
-  - 1 Juli 2024
-  - 10 Januari 2024
-  - 22 Februari
-  - 10 Maret 2024
-  - 5 April 2024
+  - 12 Mei 2024
+  - 22 Juni 2024
+  - 12 Maret 2024
+  - 22 April 2024
+  - 20 Juli 2024
   barang:
-  - KTP
-  - Kunci
-  - Kartu Keluarga
-  - Akte Kelahiran
   - SIM
+  - KTP
+  - Kartu Keluarga
+  - Kunci
+  - Uang
   atasNama:
-  - Ripia Ranegata
+  - Kuraini Turtelino
   - Ahmad Syahputra
-  - Putra Syaifudin
   - Dwi Handoko
-  - Sadala Sayurani
+  - Mulyono
+  - Hendro Baswe
   atasNIK:
-  - 34815165548734
-  - 36984561799469
   - 35071220786004
-  - 35012309870001
-  - 39541658487651
+  - 35071230970001
+  - 36918947949518
+  - 35071220780007
+  - 31598487465123
   jenisJasa:
-  - Restoran
-  - Laundry
-  - Toko
+  - Toko Bangunan
   - Perbaikan
-  - Antar Jemput
+  - Warung Sembako
+  - Restoran
+  - Warung Kelontong
   letakJasa:
-  - Jl. Kota No.3
-  - Jl. Dusun No.5
-  - Jl. Jeruk No.1
-  - Jl. Pisang No.2
-  - Jl. Anggur No.3
+  - Jl. Surga No. 11
+  - Jl. Raya No. 15
+  - Jl. Mawar No. 1
+  - Jl. Raya No. 11
+  - Jl. Anggur No. 3

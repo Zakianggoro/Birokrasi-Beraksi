@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9b7f06455d1ab545af2ccf100338f20, type: 3}
+  m_Name: Day 3 5 - Personal Data - Form
+  m_EditorClassIdentifier: 
+  personalEntries:
+  - bioDocType: Domisili
+    bioNomorSurat: 016/DL/2024
+    bioName: Indah Wulandari
+    bioNIK: 35071230870016
+    bioTanggalLahir: 11 November 1987
+    bioJenisKelamin: Perempuan
+    statusPerkawinan: Menikah
+    pekerjaan: Wirausaha
+    bioAlamat: Jl. Kemuning No. 8
+    bioPurpose: Pendaftaran Sekolah
+    bioNamaPemohon: Indah Wulandari
+    bioTanggalSurat: 
+    bioBarang: 
+    bioAtasNama: 
+    bioAtasNIK: 
+    bioJenisJasa: 
+    bioLetakJasa: 
+    bioKronologi: Indah Wulandari mengajukan Surat Keterangan Domisili untuk keperluan
+      pendaftaran anak ke sekolah. Dokumen ini digunakan sebagai syarat administrasi
+      untuk mendaftarkan anaknya di sekolah dasar setempat.

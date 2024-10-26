@@ -13,75 +13,83 @@ MonoBehaviour:
   m_Name: Day 1 - PersonalDataList
   m_EditorClassIdentifier: 
   personalEntries:
-  - bioDocType: 
-    bioNomorSurat: 
-    bioName: 
-    bioNIK: 
-    bioTanggalLahir: 
-    bioJenisKelamin: 
-    statusPerkawinan: 
-    pekerjaan: 
-    bioAlamat: 
-    bioPurpose: 
-    bioNamaPemohon: 
+  - bioDocType: Kehilangan
+    bioNomorSurat: 001/KG/2024
+    bioName: Ahmad Syahputra
+    bioNIK: 35012309870001
+    bioTanggalLahir: 12 Mei 1989
+    bioJenisKelamin: Laki-Laki
+    statusPerkawinan: Belum Menikah
+    pekerjaan: Karyawan Swasta
+    bioAlamat: Jl. Mawar No. 5
+    bioPurpose: Administrasi
+    bioNamaPemohon: Ahmad Syahputra
+    bioTanggalSurat: 10 Januari 2024
+    bioBarang: KTP
+    bioAtasNama: Ahmad Syahputra
+    bioAtasNIK: 35012309870001
+    bioJenisJasa: 
+    bioLetakJasa: 
+    bioKronologi: Ahmad Syahputra melaporkan kehilangan KTP pada tanggal 10 Januari
+      2024. Dia mengajukan permohonan untuk penerbitan KTP baru yang diperlukan untuk
+      keperluan administrasi, terutama dalam pengurusan dokumen di berbagai instansi.
+  - bioDocType: Kehilangan
+    bioNomorSurat: 004/KG/2024
+    bioName: Dwi Handoko
+    bioNIK: 35071220786004
+    bioTanggalLahir: 22 Juni 1976
+    bioJenisKelamin: Laki-Laki
+    statusPerkawinan: Menikah
+    pekerjaan: Guru
+    bioAlamat: Jl. Anggrek No. 3
+    bioPurpose: Penggantian KK
+    bioNamaPemohon: Dwi Handoko
+    bioTanggalSurat: 5 April 2024
+    bioBarang: Kartu Keluarga
+    bioAtasNama: Dwi Handoko
+    bioAtasNIK: 35071220786004
+    bioJenisJasa: 
+    bioLetakJasa: 
+    bioKronologi: Dwi Handoko melaporkan kehilangan Kartu Keluarga (KK) pada tanggal
+      5 April 2024. Dia mengajukan permohonan untuk penggantian KK guna keperluan
+      penggantian dokumen yang hilang, yang diperlukan untuk administrasi keluarga.
+  - bioDocType: Domisili
+    bioNomorSurat: 001/DL/2024
+    bioName: Putra Syaifudin
+    bioNIK: 34815165548734
+    bioTanggalLahir: 10 Maret 1982
+    bioJenisKelamin: Laki-Laki
+    statusPerkawinan: Belum Menikah
+    pekerjaan: Karyawan Swasta
+    bioAlamat: Jl. Mawar No. 5
+    bioPurpose: Pendaftaran kerja
+    bioNamaPemohon: Putra Syaifudin
     bioTanggalSurat: 
     bioBarang: 
     bioAtasNama: 
     bioAtasNIK: 
     bioJenisJasa: 
     bioLetakJasa: 
-    bioKronologi: 
-  - bioDocType: 
-    bioNomorSurat: 
-    bioName: 
-    bioNIK: 
-    bioTanggalLahir: 
-    bioJenisKelamin: 
-    statusPerkawinan: 
-    pekerjaan: 
-    bioAlamat: 
-    bioPurpose: 
-    bioNamaPemohon: 
+    bioKronologi: Putra Syaifudin mengajukan Surat Keterangan Domisili untuk keperluan
+      pendaftaran kerja di perusahaan swasta. Surat ini diperlukan sebagai bukti
+      domisili saat melamar pekerjaan.
+  - bioDocType: Domisili
+    bioNomorSurat: 006/DL/2024
+    bioName: Sadala Sayurani
+    bioNIK: 36984561799469
+    bioTanggalLahir: 31 Juli 1976
+    bioJenisKelamin: Perempuan
+    statusPerkawinan: Belum Menikah
+    pekerjaan: Wirausaha
+    bioAlamat: Jl. Suradu No. 6
+    bioPurpose: BPJS
+    bioNamaPemohon: Sadala Sayurani
     bioTanggalSurat: 
     bioBarang: 
     bioAtasNama: 
     bioAtasNIK: 
     bioJenisJasa: 
     bioLetakJasa: 
-    bioKronologi: 
-  - bioDocType: 
-    bioNomorSurat: 
-    bioName: 
-    bioNIK: 
-    bioTanggalLahir: 
-    bioJenisKelamin: 
-    statusPerkawinan: 
-    pekerjaan: 
-    bioAlamat: 
-    bioPurpose: 
-    bioNamaPemohon: 
-    bioTanggalSurat: 
-    bioBarang: 
-    bioAtasNama: 
-    bioAtasNIK: 
-    bioJenisJasa: 
-    bioLetakJasa: 
-    bioKronologi: 
-  - bioDocType: 
-    bioNomorSurat: 
-    bioName: 
-    bioNIK: 
-    bioTanggalLahir: 
-    bioJenisKelamin: 
-    statusPerkawinan: 
-    pekerjaan: 
-    bioAlamat: 
-    bioPurpose: 
-    bioNamaPemohon: 
-    bioTanggalSurat: 
-    bioBarang: 
-    bioAtasNama: 
-    bioAtasNIK: 
-    bioJenisJasa: 
-    bioLetakJasa: 
-    bioKronologi: 
+    bioKronologi: Sadala Sayurani membutuhkan Surat Keterangan Domisili untuk keperluan
+      pengurusan BPJS Kesehatan bagi keluarganya. Dokumen ini akan digunakan sebagai
+      bukti alamat tinggal di Malang.

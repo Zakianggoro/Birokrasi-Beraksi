@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9b7f06455d1ab545af2ccf100338f20, type: 3}
+  m_Name: Day 2 - PersonalDataList
+  m_EditorClassIdentifier: 
+  personalEntries:
+  - bioDocType: Usaha
+    bioNomorSurat: 001/SKU/2024
+    bioName: Ahmad Syahputra
+    bioNIK: 35071230970001
+    bioTanggalLahir: 12 Mei 1989
+    bioJenisKelamin: Laki-Laki
+    statusPerkawinan: Belum Menikah
+    pekerjaan: Karyawan Swasta
+    bioAlamat: Mawar No. 5
+    bioPurpose: Peminjaman Modal
+    bioNamaPemohon: Ahmad Syahputra
+    bioTanggalSurat: 
+    bioBarang: 
+    bioAtasNama: 
+    bioAtasNIK: 
+    bioJenisJasa: Warung Kelontong
+    bioLetakJasa: Jl. Raya No. 15
+    bioKronologi: 'Ahmad Syahputra memiliki warung kelontong di Jl. Raya Karangnongko
+      No. 15 sejak 2017. Ia mengajukan Surat Keterangan Usaha untuk pengajuan pinjaman
+      modal usaha yang akan digunakan untuk memperluas usahanya. '
+  - bioDocType: Domisili
+    bioNomorSurat: 007/DL/2024
+    bioName: Mulyono
+    bioNIK: 35071220780007
+    bioTanggalLahir: 20 Juli 1988
+    bioJenisKelamin: Laki-Laki
+    statusPerkawinan: Belum Menikah
+    pekerjaan: Mahasiswa
+    bioAlamat: Jl. Melati No. 11
+    bioPurpose: Pendaftaran Beasiswa
+    bioNamaPemohon: Mulyono
+    bioTanggalSurat: 
+    bioBarang: 
+    bioAtasNama: 
+    bioAtasNIK: 
+    bioJenisJasa: 
+    bioLetakJasa: 
+    bioKronologi: Mulyono mengajukan Surat Keterangan Domisili untuk pendaftaran
+      beasiswa. Dokumen ini diperlukan sebagai syarat administrasi untuk melanjutkan
+      studi.
+  - bioDocType: Usaha
+    bioNomorSurat: 004/SKU/2024
+    bioName: Dwi Handoko
+    bioNIK: 35071220786004
+    bioTanggalLahir: 22 Juni 1976
+    bioJenisKelamin: Laki-Laki
+    statusPerkawinan: Menikah
+    pekerjaan: Guru
+    bioAlamat: Jl. Anggrek No. 3
+    bioPurpose: Izin Usaha
+    bioNamaPemohon: Dwi Handoko
+    bioTanggalSurat: 
+    bioBarang: 
+    bioAtasNama: 
+    bioAtasNIK: 
+    bioJenisJasa: Toko Bangunan
+    bioLetakJasa: Jl. Raya No. 11
+    bioKronologi: Dwi Handoko memiliki toko bahan bangunan di Jl. Raya Karangnongko
+      No. 11 sejak 2017. Ia mengajukan Surat Keterangan Usaha untuk pengajuan izin
+      usaha guna memastikan legalitas usahanya.

@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a344cca322b4ba3428ee20bfea77c1b9, type: 3}
+  m_Name: Day 3 - RandomizedNames
+  m_EditorClassIdentifier: 
+  noSurat:
+  - 022/DL/2024
+  - 013/KG/2024
+  - 007/SKU/2024
+  - 016/DL/2024
+  - 012/SKU/2024
+  names:
+  - Mulyono
+  - Bagus Prasetyo
+  - Indah Wulandari
+  - Bella Fastria
+  - Illustri Yousia
+  nik:
+  - 35071220780007
+  - 31549451874561
+  - 35071220760013
+  - 315198971780015
+  - 35071230870016
+  tanggalLahir:
+  - 1 Maret 1984
+  - 11 November 1987
+  - 11 September 1999
+  - 20 Juli 1988
+  - 3 Maret 1976
+  jenisKelamin:
+  - Laki-Laki
+  - Perempuan
+  - Laki-Laki
+  - Perempuan
+  - Laki-Laki
+  statusPerkawinan:
+  - Menikah
+  - Belum Menikah
+  - Cerai
+  - Belum Menikah
+  - Menikah
+  pekerjaan:
+  - Petani
+  - Karyawan Swasta
+  - Peternak
+  - Wirausaha
+  - PNS
+  alamat:
+  - Jl. Mawar No. 11
+  - Jl. Belitung No. 1
+  - Jl. Kemuning No. 8
+  - Jl. Raya No. 4
+  - Jl. Tanjung No. 9
+  request:
+  - Izin Usaha
+  - Keperluan perbankan
+  - Pembukaan rekening
+  - Pendaftaran Sekolah
+  - Beasiswa
+  namaPemohon:
+  - Mulyono
+  - Bagus Prasetyo
+  - Indah Wulandari
+  - Bella Fastria
+  - Illustri Yousia
+  tanggalSurat:
+  - 10 Mei 2024
+  - 20 Juni 2024
+  - 12 Juni 2024
+  - 14 Februari 2024
+  - 1 Janurari 2024
+  barang:
+  - KTP
+  - Kartu Keluarga
+  - Kunci Motor
+  - Buku Tabungan
+  - Akte Kelahiran
+  atasNama:
+  - Mulyono
+  - Bagus Prasetyo
+  - Indah Wulandari
+  - Bella Fastria
+  - Illustri Yousia
+  atasNIK:
+  - 35071220780007
+  - 31549451874561
+  - 35071220760013
+  - 315198971780015
+  - 35071230870016
+  jenisJasa:
+  - Toko Bangunan
+  - Laundry
+  - Fotokopi & ATK
+  - Toko Baju
+  - Fotografi
+  letakJasa:
+  - Jl. Gantung No. 6
+  - Jl. Damar No. 4
+  - Jl. Serang No. 11
+  - Jl. Pandan No. 15
+  - Jl. Anggrek No. 2

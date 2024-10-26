@@ -15,6 +15,7 @@ public class InfoHandler : MonoBehaviour
     [SerializeField] private DataAssigner dataAssigner; // Reference to assign data to the form UI
     [SerializeField] private DocumentType documentType;
     [SerializeField] private PaperLayoutSwitcher paperLayout;
+    [SerializeField] private TMP_Dropdown dropDown;
 
     [SerializeField] private DropArea[] dropBoxes; // Array of DropBoxes (DropAreas)
 
@@ -306,6 +307,7 @@ public class InfoHandler : MonoBehaviour
         ResetAllDropAreas();
         paperLayout.SetLayout(0);
         documentType.PickDoc(0);
+        dropDown.value = 0;
 
 
         if (currentPersonIndex < dataAssigner.PersonalData.personalEntries.Count)
