@@ -849,7 +849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   comicAnimator: {fileID: 1625455925}
   animationTrigger: StartComic
-  levelName: Prologue - Komik 2
+  levelName: 
 --- !u!1 &1879452363
 GameObject:
   m_ObjectHideFlags: 0
