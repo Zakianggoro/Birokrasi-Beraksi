@@ -1904,7 +1904,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Button1Index: 6
-  indexStory: 0
+  Button2Index: 0
+  Button3Index: 0
+  Button4Index: 0
+  Button5Index: 0
 --- !u!1 &508537490
 GameObject:
   m_ObjectHideFlags: 0
@@ -4810,7 +4813,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1185734517
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7331,7 +7334,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Button1Index: 5
-  indexStory: 0
+  Button2Index: 0
+  Button3Index: 0
+  Button4Index: 0
+  Button5Index: 0
 --- !u!1 &1613504235
 GameObject:
   m_ObjectHideFlags: 0
