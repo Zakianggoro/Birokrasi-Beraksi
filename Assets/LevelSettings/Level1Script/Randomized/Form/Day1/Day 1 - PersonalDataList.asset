@@ -10,72 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9b7f06455d1ab545af2ccf100338f20, type: 3}
-  m_Name: Day 4 1of2 - Personal Data
+  m_Name: Day 1 - PersonalDataList
   m_EditorClassIdentifier: 
   personalEntries:
   - bioDocType: 
-    bioNomorSurat: Nomor Surat
-    bioName: Ripia
-    bioNIK: 138357587
-    bioTanggalLahir: 16/05/1994
-    bioJenisKelamin: Laki-Laki
-    statusPerkawinan: Belum Kawin
-    pekerjaan: Mahasiswa
-    bioAlamat: Mokey Mokey
-    bioPurpose: Kehilangan
-    bioNamaPemohon: 
-    bioTanggalSurat: 
-    bioBarang: 
-    bioAtasNama: 
-    bioAtasNIK: 
-    bioJenisJasa: 
-    bioLetakJasa: 
-    bioKronologi: Kronologi Kehilangan
-  - bioDocType: 
     bioNomorSurat: 
-    bioName: Diana
-    bioNIK: 116140653
-    bioTanggalLahir: 01/10/1990
-    bioJenisKelamin: Perempuan
-    statusPerkawinan: 
-    pekerjaan: 
-    bioAlamat: Gang 4
-    bioPurpose: 
-    bioNamaPemohon: 
-    bioTanggalSurat: 
-    bioBarang: 
-    bioAtasNama: 
-    bioAtasNIK: 
-    bioJenisJasa: 
-    bioLetakJasa: 
-    bioKronologi: 
-  - bioDocType: 
-    bioNomorSurat: 
-    bioName: Zackary
-    bioNIK: 316798012
-    bioTanggalLahir: 15/12/1998
-    bioJenisKelamin: Laki-Laki
-    statusPerkawinan: 
-    pekerjaan: 
-    bioAlamat: Lembah Pulau
-    bioPurpose: 
-    bioNamaPemohon: 
-    bioTanggalSurat: 
-    bioBarang: 
-    bioAtasNama: 
-    bioAtasNIK: 
-    bioJenisJasa: 
-    bioLetakJasa: 
-    bioKronologi: 
-  - bioDocType: 
-    bioNomorSurat: 
-    bioName: Anton
-    bioNIK: 873769194
-    bioTanggalLahir: 07/07/1997
+    bioName: 
+    bioNIK: 
+    bioTanggalLahir: 
     bioJenisKelamin: 
     statusPerkawinan: 
     pekerjaan: 
-    bioAlamat: asdwka
+    bioAlamat: 
     bioPurpose: 
     bioNamaPemohon: 
     bioTanggalSurat: 
@@ -87,13 +33,49 @@ MonoBehaviour:
     bioKronologi: 
   - bioDocType: 
     bioNomorSurat: 
-    bioName: Zandy
-    bioNIK: 181964518
-    bioTanggalLahir: 23/05/1984
+    bioName: 
+    bioNIK: 
+    bioTanggalLahir: 
     bioJenisKelamin: 
     statusPerkawinan: 
     pekerjaan: 
-    bioAlamat: Rumah
+    bioAlamat: 
+    bioPurpose: 
+    bioNamaPemohon: 
+    bioTanggalSurat: 
+    bioBarang: 
+    bioAtasNama: 
+    bioAtasNIK: 
+    bioJenisJasa: 
+    bioLetakJasa: 
+    bioKronologi: 
+  - bioDocType: 
+    bioNomorSurat: 
+    bioName: 
+    bioNIK: 
+    bioTanggalLahir: 
+    bioJenisKelamin: 
+    statusPerkawinan: 
+    pekerjaan: 
+    bioAlamat: 
+    bioPurpose: 
+    bioNamaPemohon: 
+    bioTanggalSurat: 
+    bioBarang: 
+    bioAtasNama: 
+    bioAtasNIK: 
+    bioJenisJasa: 
+    bioLetakJasa: 
+    bioKronologi: 
+  - bioDocType: 
+    bioNomorSurat: 
+    bioName: 
+    bioNIK: 
+    bioTanggalLahir: 
+    bioJenisKelamin: 
+    statusPerkawinan: 
+    pekerjaan: 
+    bioAlamat: 
     bioPurpose: 
     bioNamaPemohon: 
     bioTanggalSurat: 

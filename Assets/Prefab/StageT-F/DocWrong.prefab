@@ -29,9 +29,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1297159310550478918}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 12.008524, y: -8.339216, z: -0.8419721}
-  m_LocalScale: {x: 7.0397387, y: 10.184574, z: 1}
+  m_LocalScale: {x: 5.446857, y: 7.8801103, z: 0.77373}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2320708285294301283}
@@ -117,7 +117,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.03286776}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -128,7 +128,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.2081625}
   m_EdgeRadius: 0
 --- !u!114 &6287356933742566818
 MonoBehaviour:
@@ -146,6 +146,7 @@ MonoBehaviour:
   typeNo: 0
   dragSpeed: 5
   shrinkFactor: 0.7
+  holdTimeThreshold: 0.2
 --- !u!114 &2998979172345911733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,11 +159,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7bb4e6612631da4a892dfdfc079cbe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ktpLaki: {fileID: 0}
+  ktpPerempuan: {fileID: 0}
   textKTP: {fileID: 0}
+  textKTPNIK: {fileID: 0}
   textKronologi: {fileID: 0}
   documentPanel: {fileID: 0}
-  personInfo: {fileID: 0}
-  kronologi: 
+  personInfo: {fileID: 11400000, guid: 9ad617565ed3a6147a2ef8cd494e3439, type: 2}
+  kronologi: Test Kronologi
   personIndex: 0
 --- !u!1 &1736943616275454522
 GameObject:
@@ -190,8 +194,8 @@ Transform:
   m_GameObject: {fileID: 1736943616275454522}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.38482, y: 0.38482, z: 0.38482}
+  m_LocalPosition: {x: 0, y: 0.000000035115, z: 0}
+  m_LocalScale: {x: 0.14264509, y: 0.14264509, z: 0.14264509}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6019727937392505712}
@@ -237,8 +241,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2faf91a8485c3b94698e1f6f62450570, type: 3}
-  m_Color: {r: 1, g: 0.2924527, b: 0.2924527, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 61c2ef8782912b94b82af03a69fa16e9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

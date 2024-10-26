@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &473548946409361823
 Transform:
   m_ObjectHideFlags: 0
@@ -132,7 +132,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &432063631986969442
 Transform:
   m_ObjectHideFlags: 0
@@ -466,11 +466,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2164226250505257627, guid: fffe23554412eea4bab4cb1e96adfa1e, type: 3}
       propertyPath: m_text
-      value: Tanggal Surat
+      value: Tanggal Hilang
       objectReference: {fileID: 0}
     - target: {fileID: 7575824669654543731, guid: fffe23554412eea4bab4cb1e96adfa1e, type: 3}
       propertyPath: m_Name
-      value: DropBox tglSurat
+      value: DropBox tglHilang
       objectReference: {fileID: 0}
     - target: {fileID: 8974160104863727340, guid: fffe23554412eea4bab4cb1e96adfa1e, type: 3}
       propertyPath: m_Mesh
@@ -774,7 +774,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1976534792599360768, guid: fffe23554412eea4bab4cb1e96adfa1e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.713
+      value: -0.723
       objectReference: {fileID: 0}
     - target: {fileID: 1976534792599360768, guid: fffe23554412eea4bab4cb1e96adfa1e, type: 3}
       propertyPath: m_LocalPosition.y

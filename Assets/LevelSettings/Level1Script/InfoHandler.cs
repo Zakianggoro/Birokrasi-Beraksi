@@ -10,11 +10,13 @@ public class InfoHandler : MonoBehaviour
     [SerializeField] private Names data; // ScriptableObject holding the arrays
     [SerializeField] private GameObject[] draggableItems; // Reference to the draggable elements
     [SerializeField] private TextMeshPro[] draggableTexts; // The text elements inside each draggable item
+    [SerializeField] private TextMeshPro headerText;
     [SerializeField] private Button confirmButton;
     [SerializeField] private DataAssigner dataAssigner; // Reference to assign data to the form UI
     [SerializeField] private DocumentType documentType;
+    [SerializeField] private PaperLayoutSwitcher paperLayout;
 
-   [SerializeField] private DropArea[] dropBoxes; // Array of DropBoxes (DropAreas)
+    [SerializeField] private DropArea[] dropBoxes; // Array of DropBoxes (DropAreas)
 
     private Vector3[] originalPositions; // To store original positions of draggable items
     private int currentPersonIndex = 0;  // Current person index in the PersonalData list
@@ -34,6 +36,7 @@ public class InfoHandler : MonoBehaviour
         }
 
         AssignDataToDraggableItems(data.names);
+        headerText.text = "Nama";
         dataAssigner.DisplayPersonalData(currentPersonIndex);
         confirmButton.onClick.AddListener(ConfirmSelection);
     }
@@ -301,10 +304,15 @@ public class InfoHandler : MonoBehaviour
     {
         currentPersonIndex++;
         ResetAllDropAreas();
+        paperLayout.SetLayout(0);
+        documentType.PickDoc(0);
+
 
         if (currentPersonIndex < dataAssigner.PersonalData.personalEntries.Count)
         {
+            headerText.text = "NAMA";
             dataAssigner.DisplayPersonalData(currentPersonIndex); // Show new person's data
+            dataAssigner.DisplayDataChronology(currentPersonIndex);
             AssignDataToDraggableItems(data.names); // Restart with the 'name' dataset
 
             // Reset player input for the next person
@@ -354,30 +362,39 @@ public class InfoHandler : MonoBehaviour
         {
             case 1:
                 AssignDataToDraggableItems(data.nik);
+                headerText.text = "NIK";
                 break;
             case 2:
                 AssignDataToDraggableItems(data.tanggalLahir);
+                headerText.text = "TANGGAL LAHIR";
                 break;
             case 3:
                 AssignDataToDraggableItems(data.alamat);
+                headerText.text = "ALAMAT";
                 break;
             case 4:
-                AssignDataToDraggableItems(data.request);
+                AssignDataToDraggableItems(data.namaPemohon);
+                headerText.text = "NAMA PEMOHON";
                 break;
             case 5:
                 AssignDataToDraggableItems(data.noSurat);
+                headerText.text = "NO.SURAT";
                 break;
             case 6:
                 AssignDataToDraggableItems(data.jenisKelamin);
+                headerText.text = "JENIS KELAMIN";
                 break;
             case 7:
                 AssignDataToDraggableItems(data.statusPerkawinan);
+                headerText.text = "STATUS PERKAWINAN";
                 break;
             case 8:
                 AssignDataToDraggableItems(data.pekerjaan);
+                headerText.text = "PEKERJAAN";
                 break;
             case 9:
                 AssignDataToDraggableItems(data.request);
+                headerText.text = "TUJUAN";
                 break;
             default:
                 break;
@@ -393,15 +410,19 @@ public class InfoHandler : MonoBehaviour
                 {
                     case 10:
                         AssignDataToDraggableItems(data.tanggalSurat);
+                        headerText.text = "TANGGAL HILANG";
                         break;
                     case 11:
                         AssignDataToDraggableItems(data.barang);
+                        headerText.text = "BARANG";
                         break;
                     case 12:
                         AssignDataToDraggableItems(data.atasNama);
+                        headerText.text = "ATAS NAMA";
                         break;
                     case 13:
                         AssignDataToDraggableItems(data.atasNIK);
+                        headerText.text = "ATAS NIK";
                         break;
                     default:
                         break;
@@ -414,9 +435,11 @@ public class InfoHandler : MonoBehaviour
                 {
                     case 10:
                         AssignDataToDraggableItems(data.jenisJasa);
+                        headerText.text = "JENIS JASA";
                         break;
                     case 11:
                         AssignDataToDraggableItems(data.letakJasa);
+                        headerText.text = "LETAK JASA";
                         break;
                     default:
                         Debug.LogWarning("No more data sets to assign.");
@@ -427,7 +450,6 @@ public class InfoHandler : MonoBehaviour
                 Debug.Log("No valid document type selected");
                 break;
         }
-
         Debug.Log("Current data set index: " + currentDataSetIndex);
 
     }

@@ -110,7 +110,7 @@ public class DataAssigner : MonoBehaviour
         }
     }
 
-    private string DisplayDataChronology(int index)
+    public string DisplayDataChronology(int index)
     {
         // Check if the index is valid
         if (personalData == null)

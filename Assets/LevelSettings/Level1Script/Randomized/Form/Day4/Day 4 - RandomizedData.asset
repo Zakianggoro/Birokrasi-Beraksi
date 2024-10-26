@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a344cca322b4ba3428ee20bfea77c1b9, type: 3}
+  m_Name: Day 4 - RandomizedData
+  m_EditorClassIdentifier: 
+  noSurat:
+  - 016/SKU/2024
+  - 022/DL/2024
+  - 018/KG/2024
+  - 025/KG/2024
+  - 022/KG/2024
+  names:
+  - Hendro Purnomo
+  - Budi Santoso
+  - Indah Wulandari
+  - Aulia Safira
+  - Mulyono
+  nik:
+  - 35071222086022
+  - 35071233087025
+  - 35071233876028
+  - 35071230870016
+  - 35071220780007
+  tanggalLahir:
+  - 9 Februari 1987
+  - 20 Juli 1988
+  - 18 Agustus 1986
+  - 1 Oktober 1990
+  - 11 Juni 1987
+  jenisKelamin:
+  - Laki-Laki
+  - Perempuan
+  - Laki-Laki
+  - Perempuan
+  - Laki-Laki
+  statusPerkawinan:
+  - Belum Menikah
+  - Menikah
+  - Cerai
+  - Menikah
+  - Cerai
+  pekerjaan:
+  - Karyawan Swasta
+  - PNS
+  - Wirausaha
+  - Pedagang
+  - Mahasiswa
+  alamat:
+  - Jl. Syukur No. 4
+  - Jl. Reming No. 8
+  - Jl. Rening No. 9
+  - Jl. Raya No. 12
+  - Jl. Mawar No. 11
+  request:
+  - Daftar Beasiswa
+  - Ganti Kartu ATM
+  - Pencarian Kerja
+  - Buka Rekening
+  - Mengurus SIM
+  namaPemohon:
+  - Hendro Purnomo
+  - Budi Santoso
+  - Indah Wulandari
+  - Mulyono
+  - Indah Wulandari
+  tanggalSurat:
+  - 1 Januari 2024
+  - 11 Mei 2024
+  - 28 Februari 2024
+  - 21 April 2024
+  - 15 Juli 2024
+  barang:
+  - Kartu ATM
+  - Dompet
+  - Cincin
+  - Kucing
+  - SIM
+  atasNama:
+  - Hendro Purnomo
+  - Budi Santoso
+  - Indah Wulandari
+  - Mulyono
+  - Indah Wulandari
+  atasNIK:
+  - 35071222086022
+  - 35071233087025
+  - 35071233876028
+  - 35071230870016
+  - 35071220780007
+  jenisJasa:
+  - Toko Pakaian
+  - Warung Sembako
+  - Laundry
+  - Fotokopi
+  - Toko Hewan
+  letakJasa:
+  - Jl. Anggrek No. 8
+  - Jl. Manggar No. 7
+  - Jl. Dahlia No. 3
+  - Jl. Mawar No. 7
+  - Jl. Lalang No. 12

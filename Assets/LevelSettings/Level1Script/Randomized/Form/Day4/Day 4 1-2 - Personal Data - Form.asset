@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9b7f06455d1ab545af2ccf100338f20, type: 3}
+  m_Name: Day 4 1-2 - Personal Data - Form
+  m_EditorClassIdentifier: 
+  personalEntries:
+  - bioDocType: Kehilangan
+    bioNomorSurat: 022/KG/2024
+    bioName: Hendro Purnomo
+    bioNIK: 35071222086022
+    bioTanggalLahir: 18 Agustus 1986
+    bioJenisKelamin: Laki-Laki
+    statusPerkawinan: Menikah
+    pekerjaan: Karyawan Swasta
+    bioAlamat: Jl. Raya No. 12
+    bioPurpose: Ganti Kartu ATM
+    bioNamaPemohon: Hendro Purnomo
+    bioTanggalSurat: 28 Februari 2024
+    bioBarang: Kartu ATM
+    bioAtasNama: Hendro Purnomo
+    bioAtasNIK: 35071222086022
+    bioJenisJasa: 
+    bioLetakJasa: 
+    bioKronologi: 'Hendro Purnomo melaporkan kehilangan Kartu ATM pada tanggal 28
+      Februari 2024. Dia mengajukan permohonan penggantian Kartu ATM yang diperlukan
+      untuk keperluan penggantian kartu ATM, khususnya untuk kemudahan transaksi
+      finansial sehari-hari. '
+  - bioDocType: Usaha
+    bioNomorSurat: ' 016/SKU/2024'
+    bioName: Indah Wulandari
+    bioNIK: 35071230870016
+    bioTanggalLahir: 11 Juni 1987
+    bioJenisKelamin: Perempuan
+    statusPerkawinan: Menikah
+    pekerjaan: Wirausaha
+    bioAlamat: Jl. Reming No. 8
+    bioPurpose: Buka Rekening
+    bioNamaPemohon: Indah Wulandari
+    bioTanggalSurat: 
+    bioBarang: 
+    bioAtasNama: 
+    bioAtasNIK: 
+    bioJenisJasa: Laundry
+    bioLetakJasa: Jl. Raya Manggar No. 7
+    bioKronologi: Indah Wulandari memiliki usaha laundry di Jl. Raya Manggar No.
+      7 sejak 2017. Ia mengajukan Surat Keterangan Usaha untuk pembukaan rekening
+      usaha agar pendapatan usaha lebih terorganisir.

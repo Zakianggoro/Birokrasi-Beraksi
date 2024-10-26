@@ -48,7 +48,7 @@ public class PaperLayoutSwitcher : MonoBehaviour
     }
 
     // Method to switch between paper layouts
-    private void SetLayout(int index)
+    public void SetLayout(int index)
     {
         // Deactivate all layouts and texts first
         DeactivateAllLayoutsAndTexts();
