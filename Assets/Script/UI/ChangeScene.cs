@@ -16,6 +16,11 @@ public class ChangeSceneIndex : MonoBehaviour
 
     [SerializeField] private int Button5Index;
 
+    [SerializeField] private int Button6Index;
+
+    [SerializeField] private int Button7Index;
+
+
     // Public method to change the scene, can be called from a UI button
     public void Button1()
     {
@@ -40,5 +45,15 @@ public class ChangeSceneIndex : MonoBehaviour
     public void Button5()
     {
         SceneManager.LoadScene(Button5Index);
+    }
+
+    public void Button6()
+    {
+        SceneManager.LoadScene(Button6Index);
+    }
+
+    public void Button7()
+    {
+        SceneManager.LoadScene(Button7Index);
     }
 }

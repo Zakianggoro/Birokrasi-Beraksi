@@ -30,8 +30,8 @@ EditorBuildSettings:
     path: Assets/Scenes/DAY2/Day2_Tugas1_TF.unity
     guid: 397adfac9a6f8ad4aa99c8bf2a6c5c72
   - enabled: 1
-    path: Assets/Scenes/DAY2/Day2_Tugas2-4_TMP.unity
-    guid: 4cf89a1ae43b3a945ae83d5e504a2cca
+    path: Assets/Scenes/DAY2/Day2_Form_2_3_4.unity
+    guid: 573cf8ec029bf7444bf5373a20daa12e
   - enabled: 1
     path: Assets/Scenes/DAY2/Day2_Tugas5_TF.unity
     guid: 1a62716400320714bac567eb8077e73c
@@ -42,14 +42,14 @@ EditorBuildSettings:
     path: Assets/Scenes/DAY3/Day3_Tugas1_Stamp.unity
     guid: b13d0c367e68eb4409e0490b796b8135
   - enabled: 1
-    path: Assets/Scenes/DAY3/Day3_Tugas2-3_TMP.unity
-    guid: 48ac4a91054db1d4fbf682e1024b7729
+    path: Assets/Scenes/DAY3/Day3_Form_2_3.unity
+    guid: 09fdc84b8a1e9264fb4b4203f6240ab6
   - enabled: 1
     path: Assets/Scenes/DAY3/Day3_Tugas4_TF.unity
     guid: 4601258d79a48fd4ea75c95a83624e05
   - enabled: 1
-    path: Assets/Scenes/DAY3/Day3_Tugas5_TMP.unity
-    guid: 0ba861b71f74a3243a279f3fabf5e7d7
+    path: Assets/Scenes/DAY3/Day3_Form_5.unity
+    guid: 36b4d0abb8d64194685f8fb00917cbf4
   - enabled: 1
     path: Assets/Scenes/DAY3/Day3_Tugas6_Stamp.unity
     guid: 2cd8e0728b4f5394b962377505e68c8f
