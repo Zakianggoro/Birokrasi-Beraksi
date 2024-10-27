@@ -7,6 +7,7 @@ public class Komik : MonoBehaviour
 {
     [SerializeField] private Animator comicAnimator; // Single animator handling the entire sequence
     [SerializeField] private string animationTrigger = "StartComic"; // Trigger to start the comic animation
+    [SerializeField] private bool customAnimation;
     [SerializeField] private string levelName;
 
     private int pauseCount = 0; // Tracks how many pauses have happened
@@ -40,6 +41,11 @@ public class Komik : MonoBehaviour
     void ResumeAnimation()
     {
         canProceed = false;
+        if(customAnimation)
+        {
+            comicAnimator.speed = 0.25f;
+            return;
+        }
         pauseCount++;
         comicAnimator.speed = 0.25f;  // Resume the animation
         Debug.Log($"Resuming animation from panel {pauseCount}.");

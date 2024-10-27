@@ -10,42 +10,53 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a344cca322b4ba3428ee20bfea77c1b9, type: 3}
-  m_Name: Day 2 True-False
+  m_Name: Day 2 True-False 6
   m_EditorClassIdentifier: 
+  noSurat:
+  - 
+  - 
   names:
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Rini Kurniawati
+  - Bagus Prasetyo
   nik:
-  - 
-  - 
-  - 
-  - 
-  - 
+  - 35071230890010
+  - 35071220760013
   tanggalLahir:
-  - 
-  - 
-  - 
-  - 
-  - 
+  - 15 Mei 1985
+  - 3 Maret 1976
   jenisKelamin:
-  - 
-  - 
+  - Perempuan
+  - Laki-Laki
   statusPerkawinan:
-  - 
-  - 
+  - Menikah
+  - Cerai
   pekerjaan:
-  - 
-  - 
-  - 
-  - 
-  - 
+  - PNS
+  - Petani
   alamat:
+  - Jl. Cempaka No. 12
+  - Jl. Raya No. 4
+  request:
   - 
   - 
+  namaPemohon:
   - 
   - 
+  tanggalSurat:
   - 
-  request: []
+  - 
+  barang:
+  - 
+  - 
+  atasNama:
+  - 
+  - 
+  atasNIK:
+  - 
+  - 
+  jenisJasa:
+  - 
+  - 
+  letakJasa:
+  - 
+  - 

@@ -10,30 +10,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a344cca322b4ba3428ee20bfea77c1b9, type: 3}
-  m_Name: Day 5 True-False 3
+  m_Name: Day 3 True-False 7
   m_EditorClassIdentifier: 
   noSurat: []
   names:
-  - Budi Santoso
-  - Budi Santoso
+  - Indah Wulandari
+  - Joko Santoso
   nik:
-  - 35071230860028
-  - 35071230860028
+  - 35071230870016
+  - 35071230850019
   tanggalLahir:
-  - 15 Februari 1987
-  - 15 Februari 1987
+  - 11 November 1987
+  - 12 Februari 1985
   jenisKelamin:
-  - Laki-Laki
+  - Perempuan
   - Laki-Laki
   statusPerkawinan:
   - Menikah
   - Menikah
   pekerjaan:
-  - PNS
-  - PNS
+  - Wirausaha
+  - Sopir
   alamat:
-  - Jl. Anggrek No. 5
-  - Jl. Anggrek No. 5
+  - Jl. Kemuning No. 8
+  - Jl. Mawar No. 10
   request: []
   namaPemohon: []
   tanggalSurat: []

@@ -6,6 +6,7 @@ public class SpriteStackManager : MonoBehaviour
 {
     // A list to hold the sprites in the stack, serialized for the Inspector
     [SerializeField] private List<GameObject> spriteList = new List<GameObject>();
+    [SerializeField] private LevelManager levelManager;
 
     private Queue<GameObject> spriteQueue;  // Queue to manage the sprites
     private GameObject currentSprite;  // The currently active sprite
@@ -43,6 +44,15 @@ public class SpriteStackManager : MonoBehaviour
         else
         {
             Debug.Log("All sprites have been activated!");
+
+            if (levelManager != null)
+            {
+                levelManager.NextLevel();
+            }
+            else
+            {
+                Debug.LogWarning("LevelManager reference is missing!");
+            }
         }
     }
 

@@ -325,7 +325,7 @@ public class InfoHandler : MonoBehaviour
         {
             Debug.Log($"All paperwork completed! {correctDocuments} correct fields in total.");
             FinalScore(correctDocuments);
-            FindObjectOfType<LevelManager>().NextLevel("True-False");
+            FindObjectOfType<LevelManager>().NextLevel();
         }
     }
 

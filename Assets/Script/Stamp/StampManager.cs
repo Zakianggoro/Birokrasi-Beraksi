@@ -13,13 +13,18 @@ public class StampManager : MonoBehaviour
     public GameObject clickCounterObject;
     public GameObject StartPanel;
     public Button clickButton;
+    public GameObject losePanel;
+    public GameObject winPanel;
 
     [SerializeField] private StampTimer timer;
     [SerializeField] private ClickToStamp clickCounter;
     [SerializeField] private Animator anim;
-
+    [SerializeField] private ClickToStamp clickToStamp;
+    [SerializeField] private TextMeshProUGUI score;
+    [SerializeField] private string levelName;
     private bool gameStarted = false;
     private bool gameFinished = false;
+    private bool canProceed = false;
 
     // Objective completion event
     public delegate void ObjectiveCompleted();
@@ -34,6 +39,9 @@ public class StampManager : MonoBehaviour
     {
         timerObject.SetActive(false);
         clickCounterObject.SetActive(false);
+        losePanel.SetActive(false);
+        StartPanel.SetActive(true);
+
         //resultPanel.SetActive(false);
 
         /*retryButton.gameObject.SetActive(false);
@@ -42,15 +50,21 @@ public class StampManager : MonoBehaviour
 
     private void Update()
     {
-      
+        if(gameFinished)
+        {
+            if (canProceed && Input.GetMouseButtonDown(0))
+            {
+                ResumeAnimation();
+            }
+        }
     }
+
     public void StartGame()
     {
         if (!gameStarted)
         {
             gameStarted = true;
             StartPanel.SetActive(false);
-            anim.SetTrigger("Start");
             StartCoroutine(StartCountdownWithDelay(0f));
 
         }
@@ -68,18 +82,23 @@ public class StampManager : MonoBehaviour
     {
         if (gameFinished) return;
 
-        gameFinished = true;
+
         clickButton.interactable = false;
+        gameFinished = true;
         ShowLoseResult();
     }
 
     private void ShowLoseResult()
     {
-/*        resultPanel.SetActive(true);
-        resultText.text = "You Lose";
-        resultImage.sprite = loseImage;
-        retryButton.gameObject.SetActive(true);*/
+        if (!winPanel.activeSelf)  // Checks if winPanel is NOT active
+        {
+            losePanel.SetActive(true);
+            anim.SetTrigger("Lose");
+            score.text = clickToStamp.result;
+            clickToStamp.FinalScore();
+        }
     }
+
 
     private void ReloadGame()
     {
@@ -101,7 +120,23 @@ public class StampManager : MonoBehaviour
         }
     }
 
+    public void PauseForPlayerInput()
+    {
+        canProceed = true;
+        anim.speed = 0;  // Pause the animation
+    }
 
+    void ResumeAnimation()
+    {
+        canProceed = false;
+        anim.speed = 0.25f;  // Resume the animation
+    }
+
+    public void OnAnimationEnd()
+    {
+        Debug.Log("Animation sequence complete.");
+        SceneManager.LoadScene(levelName);
+    }
 
     public void ShowWinText()
     {

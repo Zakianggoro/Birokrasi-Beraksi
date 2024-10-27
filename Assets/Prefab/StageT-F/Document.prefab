@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6287356933742566818}
   - component: {fileID: 2998979172345911733}
   m_Layer: 0
-  m_Name: DocWrong
+  m_Name: Document
   m_TagString: ActiveSprite
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -144,8 +144,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteTransform: {fileID: 2320708285294301283}
   typeNo: 0
-  dragSpeed: 5
-  shrinkFactor: 0.7
+  dragSpeed: 10
+  shrinkFactor: 0.5
   holdTimeThreshold: 0.2
 --- !u!114 &2998979172345911733
 MonoBehaviour:
