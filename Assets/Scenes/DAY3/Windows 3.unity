@@ -3984,9 +3984,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 507631571}
-        m_TargetAssemblyTypeName: ChangeSceneIndex, Assembly-CSharp
-        m_MethodName: Button1
+      - m_Target: {fileID: 507631572}
+        m_TargetAssemblyTypeName: SceneTransitionWithBlinkPanel, Assembly-CSharp
+        m_MethodName: DeactivatePanelsAndChangeScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
