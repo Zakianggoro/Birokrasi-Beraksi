@@ -2229,6 +2229,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 809916399039144968, guid: 0d14eb88134b8144bbd7253fa9af6e16, type: 3}
+      propertyPath: levelName
+      value: Windows 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8608210091331952245, guid: 0d14eb88134b8144bbd7253fa9af6e16, type: 3}
       propertyPath: m_Name
       value: LevelManagerTF

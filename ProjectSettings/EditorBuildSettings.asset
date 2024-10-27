@@ -40,7 +40,7 @@ EditorBuildSettings:
     guid: bfd3b1ffaad542f479020b9bb1b958df
   - enabled: 1
     path: Assets/Scenes/DAY3/Day3_Tugas1_Stamp.unity
-    guid: b13d0c367e68eb4409e0490b796b8135
+    guid: 8047682cdf5f16b49afe7aba89fe1ac7
   - enabled: 1
     path: Assets/Scenes/DAY3/Day3_Form_2_3.unity
     guid: 09fdc84b8a1e9264fb4b4203f6240ab6
@@ -52,7 +52,7 @@ EditorBuildSettings:
     guid: 36b4d0abb8d64194685f8fb00917cbf4
   - enabled: 1
     path: Assets/Scenes/DAY3/Day3_Tugas6_Stamp.unity
-    guid: 2cd8e0728b4f5394b962377505e68c8f
+    guid: bf40a7cd686c2b846802959d3a717d8d
   - enabled: 1
     path: Assets/Scenes/DAY3/Day3_Tugas7_TF.unity
     guid: 34b22e94515dd7143897633f644fbe26
@@ -60,17 +60,17 @@ EditorBuildSettings:
     path: Assets/Scenes/DAY4/Windows 4.unity
     guid: f3847c98e0dd16447b5914d3f82affeb
   - enabled: 1
-    path: Assets/Scenes/DAY4/Day4_Tugas1-2_TMP.unity
-    guid: fd13fc1f7a3361449a8eea4e14ebed57
+    path: Assets/Scenes/DAY4/Day4_Form_1_2.unity
+    guid: 13c9786df6a303648961126a08f5df89
   - enabled: 1
     path: Assets/Scenes/DAY4/Day4_Tugas3_TF.unity
     guid: 4c56b826dbce505469c68983a42f09b3
   - enabled: 1
     path: Assets/Scenes/DAY4/Day4_Tugas4_Stamp.unity
-    guid: 995fe517d223cfa488ba46fa870954b9
+    guid: 882ebdc8c43be3d4b9734cfca6586925
   - enabled: 1
-    path: Assets/Scenes/DAY4/Day4_Tugas5-6_TMP.unity
-    guid: a5633e9c7ab58a140a7dc14133f61abd
+    path: Assets/Scenes/DAY4/Day4_Form_5_6.unity
+    guid: 54da48755cc8d4f469e9b142285f664a
   - enabled: 1
     path: Assets/Scenes/DAY4/Day4_Tugas7_TF.unity
     guid: 86beabc3203f8e94dbaebaadc9c4a27d
@@ -78,20 +78,20 @@ EditorBuildSettings:
     path: Assets/Scenes/DAY5/Windows 5.unity
     guid: 3197e5c594ef4944e817cb1135fe21ab
   - enabled: 1
-    path: Assets/Scenes/DAY5/Day5_Tugas1-2_TMP.unity
-    guid: 4be1a3da126837548accd70ea36a4ccb
+    path: Assets/Scenes/DAY5/Day5_Form_1_2.unity
+    guid: e1237a0a5970f114d88d0730bc564301
   - enabled: 1
     path: Assets/Scenes/DAY5/Day5_Tugas3_Stamp.unity
-    guid: 28c146eea74ab964e85bf6d953801c1c
+    guid: 4dd0e15ef635fce4aa6be9ce8753d7ce
   - enabled: 1
     path: Assets/Scenes/DAY5/Day5_Tugas4_TF.unity
     guid: 9aea1d9016ef38945a1172cd0bdb592a
   - enabled: 1
-    path: Assets/Scenes/DAY5/Day5_Tugas5-6_TMP.unity
-    guid: ed98d834095b98d4e9e5b4c60d4d9ab9
+    path: Assets/Scenes/DAY5/Day5_Form_5_6.unity
+    guid: 1bf8f70bdd1021d47ac0da50965cb507
   - enabled: 1
     path: Assets/Scenes/DAY5/Day5_Tugas7_Stamp.unity
-    guid: 25b921c24187e464b84af0f509e919f5
+    guid: 8fd7be477d160a2439e2c0af331e8eb6
   - enabled: 1
     path: Assets/Scenes/Main-End/Comic 3.unity
     guid: 1b4d1336d3416584286552d1cb8515ff
