@@ -323,7 +323,7 @@ public class InfoHandler : MonoBehaviour
         }
         else
         {
-            Debug.Log($"All paperwork completed! {correctDocuments} correct fields in total.");
+            Debug.Log($"All paperwork completed! {correctDocuments} correct documents in total.");
             FinalScore(correctDocuments);
             FindObjectOfType<LevelManager>().NextLevel();
         }
@@ -458,6 +458,6 @@ public class InfoHandler : MonoBehaviour
 
     private void FinalScore(int point)
     {
-        levelManager.AccumulatedPoints(point);
+        levelManager.AccumulatedPointsForm(point);
     }
 }

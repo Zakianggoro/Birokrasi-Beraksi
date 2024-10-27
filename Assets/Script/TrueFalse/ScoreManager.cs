@@ -36,7 +36,7 @@ public class ScoreManager : MonoBehaviour
 
     public void FinalScore()
     {
-        levelManager.AccumulatedPoints(score);
+        levelManager.AccumulatedPointsTF(score);
     }
 
     // Method to update the score text UI

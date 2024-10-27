@@ -48,9 +48,8 @@ public class ClickToStamp : MonoBehaviour
 
     public void FinalScore()
     {
-        float scorePercentage = totalClicks / goalClick;
-        int score = Mathf.RoundToInt(scorePercentage * 100);
-        levelManager.AccumulatedPoints(score);
-        Debug.Log("Final Score: " + score);
+        int score = 1;
+        levelManager.AccumulatedPointsStamp(score);
+        Debug.Log("Stamp Score: +" + score);
     }
 }
