@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 2708013407210707693}
   - component: {fileID: 9000355762019253826}
   - component: {fileID: 3797995476773305168}
-  - component: {fileID: -425951762596309588}
   m_Layer: 5
   m_Name: Misc
   m_TagString: Untagged
@@ -77,17 +76,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timedPanelActivations: []
---- !u!114 &-425951762596309588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4780632821765603766}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cc0f6bbade70864f98a2dc4d4a68d1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioClips:
-  - {fileID: 8300000, guid: 94e5a77df7e1395498ed63449dba8dff, type: 3}

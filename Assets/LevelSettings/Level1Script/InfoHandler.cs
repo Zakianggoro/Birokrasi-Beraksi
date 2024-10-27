@@ -265,18 +265,21 @@ public class InfoHandler : MonoBehaviour
                     if (matches == 14)
                     {
                         correctDocuments++;
+                        Debug.Log("Kehilangan +1");
                     }
                     break;
                 case "Domisili":
                     if (matches == 10)
                     {
                         correctDocuments++;
+                        Debug.Log("Domisili +1");
                     }
                     break;
                 case "Usaha":
                     if (matches == 12)
                     {
                         correctDocuments++;
+                        Debug.Log("Usaha +1");
                     }
                     break;
                 default:

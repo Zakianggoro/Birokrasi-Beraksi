@@ -45,21 +45,5 @@ public class MeetBoss : MonoBehaviour
         {
             Debug.Log("What?");
         }
-        StartCoroutine(WaitForAnimation());
-    }
-
-    private void Update()
-    {
-        if (isAnimationComplete && Input.GetMouseButtonDown(0))
-        {
-            levelManager.NextLevel();
-        }
-    }
-
-    private IEnumerator WaitForAnimation()
-    {
-        // Wait for the animation to complete
-        yield return new WaitForSeconds(5);
-        isAnimationComplete = true;
     }
 }

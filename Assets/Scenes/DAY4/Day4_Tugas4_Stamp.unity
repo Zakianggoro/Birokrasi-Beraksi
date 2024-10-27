@@ -568,7 +568,7 @@ MonoBehaviour:
   comicAnimator: {fileID: 162123040}
   animationTrigger: StartComic
   customAnimation: 1
-  levelName: 
+  levelName: Windows 4
 --- !u!1 &258416035
 GameObject:
   m_ObjectHideFlags: 0
@@ -3240,7 +3240,7 @@ MonoBehaviour:
   comicAnimator: {fileID: 1273327479}
   animationTrigger: StartComic
   customAnimation: 1
-  levelName: 
+  levelName: Windows 4
 --- !u!224 &1335240130 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3200059244461293610, guid: 60a0581623d00704483281ca902ca277, type: 3}

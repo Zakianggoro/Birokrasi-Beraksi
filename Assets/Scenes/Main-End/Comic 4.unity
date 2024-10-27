@@ -313,7 +313,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   comicAnimator: {fileID: 304322719}
   animationTrigger: StartComic
-  levelName: 
+  customAnimation: 0
+  levelName: Ending
 --- !u!1 &498836896
 GameObject:
   m_ObjectHideFlags: 0

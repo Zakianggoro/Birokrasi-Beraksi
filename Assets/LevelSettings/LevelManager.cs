@@ -47,7 +47,6 @@ public class LevelManager : MonoBehaviour
     public void NextLevel()
     {
         SceneManager.LoadScene(levelName);
-        Debug.Log($"Moving to next level with {points} points");
         // Add logic to transition to the next level here
     }
 

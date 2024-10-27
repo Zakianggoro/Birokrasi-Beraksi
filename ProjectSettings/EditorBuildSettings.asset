@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/DAY1/Turn On.unity
+    path: Assets/Scenes/Main-End/Turn On.unity
     guid: 1535035be473a2f4c815cd1505853edc
   - enabled: 1
     path: Assets/Scenes/Main-End/Main Menu.unity
@@ -100,5 +100,8 @@ EditorBuildSettings:
     guid: 9aeb12caf0c363f4cbc262b14ddd1964
   - enabled: 1
     path: Assets/Scenes/Main-End/Ending.unity
-    guid: e4372d4dc9fe089418c02f31effa9fdc
+    guid: cc25818ede52eee45b6b9b2a81696dc6
+  - enabled: 1
+    path: Assets/Scenes/Main-End/End.unity
+    guid: 607aa4339de08e44d8298130023bb7c0
   m_configObjects: {}

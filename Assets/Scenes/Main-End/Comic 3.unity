@@ -561,7 +561,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 4, y: 7}
+  m_AnchoredPosition: {x: -738, y: 7}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &885658528
@@ -1040,7 +1040,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   comicAnimator: {fileID: 1985146736}
   animationTrigger: StartComic
-  levelName: Day 4
+  customAnimation: 0
+  levelName: Comic 4
 --- !u!95 &1985146736
 Animator:
   serializedVersion: 5
