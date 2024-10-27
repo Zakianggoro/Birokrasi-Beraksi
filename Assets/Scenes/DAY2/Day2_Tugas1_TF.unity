@@ -3252,6 +3252,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PaperKehilangan3
       objectReference: {fileID: 0}
+    - target: {fileID: 5710515892137832081, guid: f4786dfbcb0fc0f4798df5c8802e699c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3366,7 +3370,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &3112518301087723190
 GameObject:
   m_ObjectHideFlags: 0

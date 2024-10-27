@@ -1518,6 +1518,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PaperDomisili7
       objectReference: {fileID: 0}
+    - target: {fileID: 3396394495123972166, guid: ac44e977ba916214b8f180c469546400, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4364799120346758144, guid: ac44e977ba916214b8f180c469546400, type: 3}
       propertyPath: m_text
       value: "NIK \t\t \t : Joko Santoso\r\nNama\t\t   \t : 35071230850019\r\nTgl.Lahir\t
@@ -2367,7 +2371,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6491230598250207544, guid: 796a90bcfb951d745beabc903cb8b05f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8210744007699286745, guid: 796a90bcfb951d745beabc903cb8b05f, type: 3}
       propertyPath: m_AnchoredPosition.x

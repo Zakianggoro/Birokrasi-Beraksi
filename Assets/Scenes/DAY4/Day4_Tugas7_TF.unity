@@ -1654,7 +1654,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6491230598250207544, guid: 796a90bcfb951d745beabc903cb8b05f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2689,6 +2689,10 @@ PrefabInstance:
     - target: {fileID: 5710515892137832081, guid: f4786dfbcb0fc0f4798df5c8802e699c, type: 3}
       propertyPath: m_Name
       value: PaperKehilangan
+      objectReference: {fileID: 0}
+    - target: {fileID: 5710515892137832081, guid: f4786dfbcb0fc0f4798df5c8802e699c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7710264194272290375, guid: f4786dfbcb0fc0f4798df5c8802e699c, type: 3}
       propertyPath: m_text
